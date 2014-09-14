@@ -1,0 +1,183 @@
+main {
+	.modal{
+		.style-modal-dialog{
+			width: 1110px;
+
+			
+
+			.style-modal-content{
+				height: 1500px;
+				border-radius: 0;
+
+				.style-modal-header{
+					padding: 0px;
+					
+					.blue-line{
+						border-bottom: 10px solid rgb(41,92,171);
+
+						.style-close{
+							position: absolute;
+							width: 30px;
+							height: 30px;
+							top: 30px;
+							right: 50px;
+							font-size: 30px;
+							color: rgb(255,255,255);
+							background: rgb(150,150,150);
+							opacity: 1;
+							border-radius: 50%;
+						}
+
+						.style-modal-title{
+							padding-top: 50px;
+							padding-bottom: 30px;
+							text-align: center;
+							line-height: 1;
+							font-size: 48px;
+							color: #606060;
+						}
+					}
+
+					.background-gradient{
+						
+						//margin: 0 auto;
+						text-align: center;
+
+						.style-nav-pills{
+							display: inline-block;
+							margin: 35px 0;
+							border: 2px solid rgb(191,191,191);
+							border-radius: 8px;
+							box-sizing:  border-box;
+
+							li{
+								
+								font-size: 30px;
+								line-height: 1;
+								margin-left: 0px;
+								a{
+									padding: 0 75px;
+									color: rgb(205,205,205);
+								}
+							}
+													
+							.active{
+								text-decoration: underline;
+								margin-left: 0px;
+								
+								
+								a{	
+									color: rgb(255,255,255);
+									background-color: rgb(58,135,255);
+									border-radius: 6px;
+								}
+							}
+
+						}
+					}
+
+				}
+
+				.style-modal-body{
+					padding: 55px;
+
+					.tab-content{
+						.tab-pane{
+							.client, .mobile-phone{
+								border: 2px dotted rgb(160,160,160);
+								padding: 20px 0 35px 0;
+								background: rgb(239,240,242);
+
+								.images-logo{
+									position: absolute;
+									width: 40px;
+									height: 80px;
+									margin: -70px 0 0 478px;
+								}
+								.cell{
+									display: inline-block;
+									width: 495px;
+									vertical-align: top;
+
+									h2{
+										display: inline-block;
+										font-size: 34px;
+										padding: 13px 4px 5px 6px;
+										margin: 0;
+									}
+									
+									h4{
+										display: inline-block;
+										margin: 0;
+									}
+									.event{
+										display: inline-block;
+										width:370px; // почему именно 370, а не автоматически?
+										padding: 15px 0 0 0;
+										vertical-align: top;
+										h2{
+											padding-left: 0;
+										}
+
+										h3{
+											display: inline-block;
+											font-size: 30px;
+											padding: 3px 4px 5px 0px;
+											margin: 0;
+										}
+									}
+									.event-img{
+										display: inline-block;
+										padding-top: 30px;
+										a{
+											display: inline-block;
+											width: 65px;
+											height: 65px;
+											border: 1px solid rgb(160,160,160);
+											border-radius: 50%;
+											background: rgb(199,199,199);
+											img{
+												padding: 15px 0px 0px 19px;
+											}
+										}
+										a:active{
+											background: url("../images/active-btn.png");
+											img{
+												src: url("../images/active-flag.png");
+											}
+											
+										}
+									}
+								}
+								.cell-l{
+									padding: 0 35px 0 10px;
+								}
+
+								.cell-r{
+									padding: 0 10px 0 35px;
+								}
+
+							}
+							.client{
+								.images-logo{
+									background: url("../images/client.png") no-repeat;
+								}
+							}
+
+							.mobile-phone{
+								margin-top: 60px;
+								.images-logo{
+									background:url("../images/phone.png") no-repeat;
+								}
+							}
+							
+						}
+					}
+
+				}
+
+
+			}
+		}
+	}
+}
