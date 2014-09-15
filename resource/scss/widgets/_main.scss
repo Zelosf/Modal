@@ -1,4 +1,5 @@
 main {
+	//font-family:"exo_2.0regular";
 	.modal {
 		.style-modal-dialog {
 			width: 1110px;
@@ -73,25 +74,26 @@ main {
 										}
 									}
 
-									.active {
+									.style-active {
 										text-decoration: underline;
-										margin-left: 0px;									
+																			
 										
 										a{	
 											color: rgb(255,255,255);
 											background-color: rgb(58,135,255);
-											border-radius: 6px;
+											border-radius: 8px;
 										}
 									}
 									.arrow-r, .arrow-l {										
-										a{
-											height: 65px;
+										a{											
 											width: 65px;
-											line-height: 55px;
+											height: 65px;
+											padding:2px 0 0 0;
 											border: 2px solid rgb(172,172,172);
 											border-radius: 50%;
-											padding:0px;
 											background: rgb(199,199,199);
+											font-size: 34px;
+											line-height: 55px;
 											color: rgb(255,255,255);
 										}
 									}
@@ -164,20 +166,35 @@ main {
 											height: 65px;
 											border: 1px solid rgb(160,160,160);
 											border-radius: 50%;
-											background: rgb(199,199,199);
+											background: url("../images/flag.png") no-repeat 19px 12px rgb(199,199,199);
 											img {
 												padding: 15px 0px 0px 19px;
 											}
 										}
 										a:active {
-											background: url("../images/active-btn.png");
-											img {
-												src: url("../images/active-flag.png");
-											}
+											background: url("../images/active-flag.png") no-repeat 19px 12px, url("../images/active-btn.png") ;
+											
 										}
 									}
 									.error {
 										border: 2px solid rgb(255,1,1);
+									}
+									.style-btn-default{
+										position: absolute;
+										top: 242px;
+										left: 579px;
+										height: 40px;
+										width: 40px;
+										padding: 0;
+										border-color: rgb(93,151,253);
+										box-sizing: border-box;
+										border-radius: 50%;
+										font-size: 30px;
+										line-height: 1;	
+										color: rgb(93,151,253);									
+									}
+									.style-btn-default:focus{
+										outline: none;
 									}
 								}
 								.cell-l {

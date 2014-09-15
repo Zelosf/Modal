@@ -2,6 +2,7 @@
 @import "compass/css3";
 
 //@import "base";
+
 @import "style/bootstrap";
 @import "style/select2";
 
@@ -13,3 +14,15 @@
 @import "widgets/footer";
 
 @import "layout/html";
+
+
+//@font-face {
+//    font-family: 'exo_2.0regular';
+//    src: url('font/exo_2_regular-webfont.eot');
+//    src: url('font/exo_2_regular-webfont.eot?#iefix') format('embedded-opentype'),
+//         url('font/exo_2_regular-webfont.woff2') format('woff2'),
+//         url('font/exo_2_regular-webfont.woff') format('woff'),
+//         url('font/exo_2_regular-webfont.ttf') format('truetype');
+//    font-weight: normal;
+//    font-style: normal;
+//}

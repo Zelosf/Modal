@@ -9657,24 +9657,24 @@ input[type="text"]:focus {
   outline: none;
 }
 
-/* line 3, ../scss/widgets/_main.scss */
+/* line 4, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog {
   width: 1110px;
 }
-/* line 8, ../scss/widgets/_main.scss */
+/* line 9, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content {
   height: 1500px;
   border-radius: 0;
 }
-/* line 12, ../scss/widgets/_main.scss */
+/* line 13, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-header {
   padding: 0px;
 }
-/* line 15, ../scss/widgets/_main.scss */
+/* line 16, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line {
   border-bottom: 10px solid #295cab;
 }
-/* line 18, ../scss/widgets/_main.scss */
+/* line 19, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line .style-close {
   position: absolute;
   width: 30px;
@@ -9687,7 +9687,7 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-l
   opacity: 1;
   border-radius: 50%;
 }
-/* line 31, ../scss/widgets/_main.scss */
+/* line 32, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line .style-modal-title {
   padding-top: 50px;
   padding-bottom: 30px;
@@ -9696,166 +9696,181 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-l
   font-size: 48px;
   color: #606060;
 }
-/* line 45, ../scss/widgets/_main.scss */
+/* line 46, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body {
   padding: 170px 55px 55px 55px;
 }
-/* line 50, ../scss/widgets/_main.scss */
+/* line 51, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient {
   position: absolute;
   display: inline-block;
   text-align: center;
   top: 0px;
 }
-/* line 57, ../scss/widgets/_main.scss */
+/* line 58, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient .style-nav-pills {
   margin: 35px 0;
   box-sizing: border-box;
 }
-/* line 64, ../scss/widgets/_main.scss */
+/* line 65, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient .style-nav-pills li {
   font-size: 30px;
   line-height: 50px;
   margin-left: 0px;
 }
-/* line 69, ../scss/widgets/_main.scss */
+/* line 70, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient .style-nav-pills li a {
   border: 2px solid #bfbfbf;
   padding: 0 70px;
   color: #cdcdcd;
 }
-/* line 76, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient .style-nav-pills .active {
+/* line 77, ../scss/widgets/_main.scss */
+main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient .style-nav-pills .style-active {
   text-decoration: underline;
-  margin-left: 0px;
 }
-/* line 80, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient .style-nav-pills .active a {
+/* line 81, ../scss/widgets/_main.scss */
+main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient .style-nav-pills .style-active a {
   color: white;
   background-color: #3a87ff;
-  border-radius: 6px;
+  border-radius: 8px;
 }
-/* line 87, ../scss/widgets/_main.scss */
+/* line 88, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient .style-nav-pills .arrow-r a, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient .style-nav-pills .arrow-l a {
-  height: 65px;
   width: 65px;
-  line-height: 55px;
+  height: 65px;
+  padding: 2px 0 0 0;
   border: 2px solid #acacac;
   border-radius: 50%;
-  padding: 0px;
   background: #c7c7c7;
+  font-size: 34px;
+  line-height: 55px;
   color: white;
 }
-/* line 98, ../scss/widgets/_main.scss */
+/* line 100, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient .style-nav-pills .arrow-l {
   margin: -5px 98px 0 10px;
 }
-/* line 101, ../scss/widgets/_main.scss */
+/* line 103, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient .style-nav-pills .arrow-r {
   margin: -5px 10px 0 98px;
 }
-/* line 105, ../scss/widgets/_main.scss */
+/* line 107, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .background-gradient .style-nav-pills .disabled a {
   border: 2px solid #d2d2d2;
   background: gainsboro;
 }
-/* line 113, ../scss/widgets/_main.scss */
+/* line 115, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone {
   box-sizing: border-box;
   border: 2px dotted #a0a0a0;
   padding: 20px 0 35px 0;
   background: #eff0f2;
 }
-/* line 120, ../scss/widgets/_main.scss */
+/* line 122, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .images-logo, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .images-logo {
   position: absolute;
   width: 40px;
   height: 80px;
   margin: -70px 0 0 478px;
 }
-/* line 126, ../scss/widgets/_main.scss */
+/* line 128, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell {
   display: inline-block;
   width: 495px;
   vertical-align: top;
 }
-/* line 131, ../scss/widgets/_main.scss */
+/* line 133, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell h2 {
   display: inline-block;
   font-size: 34px;
   padding: 13px 4px 5px 6px;
   margin: 0;
 }
-/* line 138, ../scss/widgets/_main.scss */
+/* line 140, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell h4, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell h4 {
   display: inline-block;
   margin: 0;
 }
-/* line 142, ../scss/widgets/_main.scss */
+/* line 144, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell .event, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell .event {
   display: inline-block;
   width: 370px;
   padding: 15px 0 0 0;
   vertical-align: top;
 }
-/* line 147, ../scss/widgets/_main.scss */
+/* line 149, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell .event h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell .event h2 {
   padding-left: 0;
 }
-/* line 151, ../scss/widgets/_main.scss */
+/* line 153, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell .event h3, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell .event h3 {
   display: inline-block;
   font-size: 30px;
   padding: 3px 4px 5px 0px;
   margin: 0;
 }
-/* line 158, ../scss/widgets/_main.scss */
+/* line 160, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell .event-img, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell .event-img {
   display: inline-block;
   padding-top: 30px;
 }
-/* line 161, ../scss/widgets/_main.scss */
+/* line 163, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell .event-img a, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell .event-img a {
   display: inline-block;
   width: 65px;
   height: 65px;
   border: 1px solid #a0a0a0;
   border-radius: 50%;
-  background: #c7c7c7;
+  background: url("../images/flag.png") no-repeat 19px 12px #c7c7c7;
 }
-/* line 168, ../scss/widgets/_main.scss */
+/* line 170, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell .event-img a img, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell .event-img a img {
   padding: 15px 0px 0px 19px;
 }
-/* line 172, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell .event-img a:active, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell .event-img a:active {
-  background: url("../images/active-btn.png");
-}
 /* line 174, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell .event-img a:active img, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell .event-img a:active img {
-  src: url("../images/active-flag.png");
+main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell .event-img a:active, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell .event-img a:active {
+  background: url("../images/active-flag.png") no-repeat 19px 12px, url("../images/active-btn.png");
 }
 /* line 179, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell .error, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell .error {
   border: 2px solid #ff0101;
 }
-/* line 183, ../scss/widgets/_main.scss */
+/* line 182, ../scss/widgets/_main.scss */
+main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell .style-btn-default, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell .style-btn-default {
+  position: absolute;
+  top: 242px;
+  left: 579px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-color: #5d97fd;
+  box-sizing: border-box;
+  border-radius: 50%;
+  font-size: 30px;
+  line-height: 1;
+  color: #5d97fd;
+}
+/* line 196, ../scss/widgets/_main.scss */
+main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell .style-btn-default:focus, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell .style-btn-default:focus {
+  outline: none;
+}
+/* line 200, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell-l {
   padding: 0 35px 0 10px;
 }
-/* line 187, ../scss/widgets/_main.scss */
+/* line 204, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .cell-r {
   padding: 0 10px 0 35px;
 }
-/* line 193, ../scss/widgets/_main.scss */
+/* line 210, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .client .images-logo {
   background: url("../images/client.png") no-repeat;
 }
-/* line 198, ../scss/widgets/_main.scss */
+/* line 215, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone {
   margin-top: 60px;
 }
-/* line 200, ../scss/widgets/_main.scss */
+/* line 217, ../scss/widgets/_main.scss */
 main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .tab-pane .mobile-phone .images-logo {
   background: url("../images/phone.png") no-repeat;
 }
