@@ -31,13 +31,13 @@
 					        <h4 class="modal-title style-modal-title" id="myModalLabel">Your informations</h4>
 				        </div>
 
-				        <div class="background-gradient">
+				        <!--<div class="background-gradient">
 					        <ul class="nav nav-pills style-nav-pills">			        	
 								<li class="active"><a href="#Data" data-toggle="tab">Data</a></li>
 								<li><a href="#Repair" data-toggle="tab">Repair</a></li>
 								<li><a href="#Finish" data-toggle="tab">Finish</a></li>						
 							</ul>
-						</div>
+						</div>-->
 				    
 				    </div>
 
@@ -46,6 +46,22 @@
 				    <div class="modal-body style-modal-body">
 						<div class="tab-content">
 							<div class="tab-pane active" id="Data">
+								<!--<ul class="pagination">
+									<li class="disabled"><a href="#" data-toggle="tab">&laquo;</a></li>
+									<li class="active"><a href="#Data" data-toggle="tab">Data <span class="sr-only">(current)</span></a></li>
+									<li><a href="#Repair" data-toggle="tab">Repair <span class="sr-only">(current)</span></a></li>
+									<li><a href="#Finish" data-toggle="tab">Finish <span class="sr-only">(current)</span></a></li>
+									<li><a href="#Repair" data-toggle="tab">&raquo;</a></li>
+								</ul>-->
+								<div class="background-gradient">
+									<ul class="nav nav-pills style-nav-pills">
+										<li class="disabled arrow-l"><a href="#" data-toggle="tab">&laquo;</a></li>			        	
+										<li class="active"><a href="#Data" data-toggle="tab">Data</a></li>
+										<li><a href="#Repair" data-toggle="tab">Repair</a></li>
+										<li><a href="#Finish" data-toggle="tab">Finish</a></li>
+										<li class="arrow-r"><a href="#Repair" data-toggle="tab">&raquo;</a></li>						
+									</ul>
+								</div>
 								<form class="client" action="#" name="client">
 
 									<div class="images-logo">
@@ -59,7 +75,10 @@
 
 									<div class="cell cell-r">
 										<h2>Company</h2>
-										<input name="client[Company]" type="text"/>
+										<input class="error" name="client[Company]" type="text"/>
+										<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+ 										Информер вверху
+ 										</button>
 									</div>
 
 									<div class="cell cell-l">
@@ -154,8 +173,28 @@
 									</div>
 								</form>
 							</div>
-							<div class="tab-pane" id="Repair">2</div>
-							<div class="tab-pane" id="Finish">3</div>
+							<div class="tab-pane" id="Repair">2
+								<div class="background-gradient">
+									<ul class="nav nav-pills style-nav-pills">
+										<li class="arrow-l"><a href="#Data" data-toggle="tab">&laquo;</a></li>			        	
+										<li><a href="#Data" data-toggle="tab">Data</a></li>
+										<li class="active"><a href="#Repair" data-toggle="tab">Repair</a></li>
+										<li><a href="#Finish" data-toggle="tab">Finish</a></li>
+										<li class="arrow-r"><a href="#Finish" data-toggle="tab">&raquo;</a></li>						
+									</ul>
+								</div>
+							</div>
+							<div class="tab-pane" id="Finish">3
+								<div class="background-gradient">
+									<ul class="nav nav-pills style-nav-pills">
+										<li class="arrow-l"><a href="#Repair" data-toggle="tab">&laquo;</a></li>			        	
+										<li><a href="#Data" data-toggle="tab">Data</a></li>
+										<li><a href="#Repair" data-toggle="tab">Repair</a></li>
+										<li class="active"><a href="#Finish" data-toggle="tab">Finish</a></li>
+										<li class="disabled arrow-r"><a href="#Finish" data-toggle="tab">&raquo;</a></li>						
+									</ul>
+								</div>
+							</div>
 						</div>
 				    </div>
 				    
