@@ -1,0 +1,13 @@
+.select2-drop-active{
+	border: 1px solid rgb(206,206,206);
+
+	.select2-results{
+		font-size: 11px;
+		color:  rgb(60,60,60);
+
+		.select2-highlighted{
+			background: rgb(161,161,161);
+			color:  rgb(60,60,60);
+		}
+	}
+}

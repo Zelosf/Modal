@@ -3,26 +3,16 @@
 
 //@import "base";
 
-@import "style/bootstrap";
-@import "style/select2";
+@import "lib/bootstrap";
+@import "lib/select2";
 
 @import "components/input";
 @import "components/button";
+@import "components/scrollbar";
 
 @import "widgets/header";
 @import "widgets/main";
 @import "widgets/footer";
+@import "widgets/modal";
 
 @import "layout/html";
-
-
-//@font-face {
-//    font-family: 'exo_2.0regular';
-//    src: url('font/exo_2_regular-webfont.eot');
-//    src: url('font/exo_2_regular-webfont.eot?#iefix') format('embedded-opentype'),
-//         url('font/exo_2_regular-webfont.woff2') format('woff2'),
-//         url('font/exo_2_regular-webfont.woff') format('woff'),
-//         url('font/exo_2_regular-webfont.ttf') format('truetype');
-//    font-weight: normal;
-//    font-style: normal;
-//}
