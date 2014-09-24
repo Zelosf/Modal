@@ -9686,25 +9686,64 @@ input[type="submit"] {
   width: 70px;
   font-size: 18px;
   padding: 0px 5px;
+  margin: 0px 0px 0px 70px;
   border: 1px solid #dd5000;
   border-radius: 5px;
   box-sizing: border-box;
-  color: #747474;
+  color: #fff;
   text-shadow: 0px 0.5px 2px rgba(255, 255, 255, 0.5);
   background: linear-gradient(0deg, #d98851 50%, #ff6600);
 }
 
-/* line 75, ../scss/components/_input.scss */
+/* line 76, ../scss/components/_input.scss */
 input[type="submit"]:active {
   border: 1px solid #dd5000;
   border-radius: 5px;
   outline: none;
-  background: linear-gradient(0deg, #d98851 50%, #ff6600) radial-gradient(circle at 0 0, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35));
   box-shadow: inset rgba(221, 80, 0, 0.4) -3px -3px 8px, inset rgba(221, 80, 0, 0.4) 3px 3px 8px;
 }
 
-/* line 83, ../scss/components/_input.scss */
+/* line 84, ../scss/components/_input.scss */
 input[type="submit"]:focus {
+  outline: none;
+}
+
+/* line 88, ../scss/components/_input.scss */
+input[type="seach"] {
+  width: 100%;
+  font-size: 11px;
+  padding: 7px 5px;
+  border: 1px solid #dddddd;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #000;
+  background: #fff;
+}
+
+/* line 104, ../scss/components/_input.scss */
+input[type="seach"]:focus {
+  outline: none;
+}
+
+/* line 108, ../scss/components/_input.scss */
+input[type="datetime-local"] {
+  width: 127px;
+  font-size: 9px;
+  line-height: 14px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #000;
+  background: #fff;
+}
+
+/* line 119, ../scss/components/_input.scss */
+input[type="datetime-local"]:focus {
   outline: none;
 }
 
@@ -9729,27 +9768,27 @@ input[type="submit"]:focus {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
-/* line 4, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog {
+/* line 2, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog {
   width: 570px;
   box-shadow: 0 0 0 10px rgba(150, 150, 150, 0.5);
 }
-/* line 10, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content {
+/* line 6, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content {
   height: 750px;
   border: none;
   border-radius: 0;
 }
-/* line 15, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header {
+/* line 11, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header {
   padding: 0px;
 }
-/* line 18, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line {
+/* line 14, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line {
   border-bottom: 5px solid #295cab;
 }
-/* line 21, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line .style-close {
+/* line 17, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line .style-close {
   position: absolute;
   width: 15px;
   height: 15px;
@@ -9762,8 +9801,8 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-l
   opacity: 1;
   border-radius: 50%;
 }
-/* line 35, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line .style-modal-title {
+/* line 31, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line .style-modal-title {
   padding-top: 25px;
   padding-bottom: 15px;
   text-align: center;
@@ -9771,72 +9810,72 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-l
   font-size: 24px;
   color: #606060;
 }
-/* line 45, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient {
+/* line 41, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient {
   padding: 20px 110px 20px;
   background: linear-gradient(0deg, #dcdcdc 5%, #eff0f2, #eff0f2, #eff0f2, #eff0f2, #eff0f2, #eff0f2);
   text-align: center;
   top: 0px;
   box-sizing: border-box;
 }
-/* line 52, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills {
+/* line 48, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills {
   display: inline-block;
   border: 1px solid #bfbfbf;
   border-radius: 4px;
   box-sizing: border-box;
 }
-/* line 59, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li {
+/* line 55, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li {
   font-size: 15px;
   line-height: 25px;
   margin-left: 0px;
 }
-/* line 64, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li a {
+/* line 60, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li a {
   padding: 0 35px;
   color: #cdcdcd;
 }
-/* line 70, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.active {
+/* line 66, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.active {
   text-decoration: underline;
 }
-/* line 72, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.active a {
+/* line 69, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.active a {
   color: white;
   background-color: #3a87ff;
   border-radius: 3px 0px 0px 3px;
 }
-/* line 79, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.second.active a {
+/* line 76, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.second.active a {
   border-radius: 0px;
 }
-/* line 83, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.second.active.first a {
+/* line 80, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.second.active.first a {
   background-color: #3a87ff;
 }
-/* line 89, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.third.active a {
+/* line 86, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.third.active a {
   border-radius: 0px 3px 3px 0px;
 }
-/* line 93, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.third.active.first a {
+/* line 90, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.third.active.first a {
   background-color: #3a87ff;
 }
-/* line 101, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li:nth-child(2).active:first-child(1) a {
+/* line 98, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li:nth-child(2).active:first-child(1) a {
   background-color: #3a87ff;
 }
-/* line 109, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li:last-child.active:first-child, main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li:last-child.active:nth-child(2) {
+/* line 106, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li:last-child.active:first-child, .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li:last-child.active:nth-child(2) {
   background-color: #3a87ff;
 }
-/* line 119, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body {
+/* line 116, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body {
   padding: 31px 27px 27px 27px;
 }
-/* line 124, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows {
+/* line 121, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows {
   position: absolute;
   display: inline-block;
   width: 500px;
@@ -9844,8 +9883,8 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-cont
   top: -48px;
   box-sizing: border-box;
 }
-/* line 132, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-r a, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-l a {
+/* line 129, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-r a, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-l a {
   width: 32px;
   height: 32px;
   padding: 1px 0 0 0;
@@ -9856,95 +9895,95 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-cont
   line-height: 27px;
   color: white;
 }
-/* line 144, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-l {
+/* line 141, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-l {
   left: 2px;
 }
-/* line 148, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-r {
+/* line 145, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-r {
   left: 430px;
 }
-/* line 153, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .disabled a {
+/* line 150, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .disabled a {
   border: 1px solid #d2d2d2;
   background: gainsboro;
 }
-/* line 159, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish {
+/* line 156, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish {
   box-sizing: border-box;
   border: 1px dotted #a0a0a0;
   padding: 10px 0 17px 0;
   background: #eff0f2;
 }
-/* line 164, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h2 {
+/* line 162, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h2 {
   font-size: 16px;
 }
-/* line 168, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client h3, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone h3, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h3, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h3 {
+/* line 166, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h3 {
   font-size: 15px;
 }
-/* line 172, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client h4, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone h4, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h4, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h4 {
+/* line 170, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h4 {
   font-size: 9px;
 }
-/* line 178, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .images-logo, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .images-logo, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .images-logo, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .images-logo {
+/* line 174, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .images-logo, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .images-logo, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .images-logo, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .images-logo {
   position: absolute;
   width: 22px;
   height: 40px;
   margin: -35px 0 0 245px;
 }
-/* line 184, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell {
+/* line 181, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell {
   position: relative;
   display: inline-block;
   width: 254px;
   vertical-align: top;
 }
-/* line 190, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell h2 {
+/* line 187, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell h2 {
   display: inline-block;
   padding: 6px 2px 2px 3px;
   margin: 0;
 }
-/* line 196, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell h4, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell h4, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell h4, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell h4 {
+/* line 193, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell h4 {
   display: inline-block;
   margin: 0;
 }
-/* line 200, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event {
+/* line 197, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event {
   display: inline-block;
   width: 185px;
   padding: 7px 0 0 0;
   vertical-align: top;
 }
-/* line 205, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event h2 {
+/* line 202, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event h2 {
   padding-left: 0;
 }
-/* line 209, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event h3, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event h3, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event h3, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event h3 {
+/* line 206, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event h3 {
   display: inline-block;
   padding: 1px 2px 2px 0px;
   margin: 0;
 }
-/* line 215, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event-checkbox, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event-checkbox, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event-checkbox, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event-checkbox {
+/* line 212, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event-checkbox {
   display: inline-block;
 }
-/* line 218, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell label, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell label, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell label, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell label {
+/* line 215, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell label {
   display: inline-block;
   padding-top: 15px;
 }
-/* line 223, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .error, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .error, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .error, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .error {
+/* line 220, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .error {
   border: 1px solid #ff0101;
 }
-/* line 227, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .style-btn-default, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .style-btn-default, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .style-btn-default, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .style-btn-default {
+/* line 224, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .style-btn-default {
   position: absolute;
   top: 22px;
   left: 11px;
@@ -9958,18 +9997,18 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-cont
   line-height: 1;
   color: #5d97fd;
 }
-/* line 241, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .style-btn-default:focus, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .style-btn-default:focus, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .style-btn-default:focus, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .style-btn-default:focus {
+/* line 238, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .style-btn-default:focus {
   outline: none;
 }
-/* line 244, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container {
+/* line 241, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container {
   width: 100%;
   border: 1px solid #dddddd;
   border-radius: 4px;
 }
-/* line 249, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-choice, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-choice, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-choice, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-choice {
+/* line 246, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-choice, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-choice, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-choice, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-choice {
   position: inherit;
   display: block;
   width: 100%;
@@ -9977,8 +10016,9 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-cont
   padding: 0;
   border: none;
 }
-/* line 258, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-choice .select2-chosen, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-choice .select2-chosen, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-choice .select2-chosen, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-choice .select2-chosen {
+/* line 255, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-choice .select2-chosen, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-choice .select2-chosen, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-choice .select2-chosen, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-choice .select2-chosen {
+  height: 28px;
   width: 100%;
   font-size: 11px;
   padding: 7px 5px;
@@ -9987,14 +10027,14 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-cont
   background: #fff;
   line-height: 1.4;
 }
-/* line 268, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-choice .select2-chosen:focus, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-choice .select2-chosen:focus, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-choice .select2-chosen:focus, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-choice .select2-chosen:focus {
+/* line 266, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-choice .select2-chosen:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-choice .select2-chosen:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-choice .select2-chosen:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-choice .select2-chosen:focus {
   border: 1px solid #3a87ff;
   border-radius: 4px;
   outline: none;
 }
-/* line 274, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-arrow, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-arrow, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-arrow, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-arrow {
+/* line 272, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-arrow, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-arrow, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-arrow, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-arrow {
   width: 15px;
   height: 12px;
   right: 3px;
@@ -10003,87 +10043,81 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-cont
   border-left: none;
   background: #cecece;
 }
-/* line 283, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-arrow b, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-arrow b, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-arrow b, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-arrow b {
+/* line 281, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-arrow b, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-arrow b, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-arrow b, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-arrow b {
   background: url("../images/arrow-down.png") no-repeat 2px 3px;
   background-size: cover;
 }
-/* line 290, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-l {
-  padding: 0 17px 0 5px;
+/* line 288, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-l {
+  padding: 1px 17px 1px 5px;
 }
-/* line 294, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-r {
-  padding: 0 5px 0 17px;
+/* line 292, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-r {
+  padding: 1px 5px 1px 17px;
 }
-/* line 298, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time {
+/* line 296, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time {
   width: 100%;
+  padding: 10px 0;
 }
-/* line 301, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time h2 {
+/* line 300, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time h2 {
   display: block;
   padding: 6px 2px 2px 8px;
 }
-/* line 305, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time .cell-l {
+/* line 304, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time .cell-l {
   display: inline-block;
   width: 49.6%;
 }
-/* line 309, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time h6, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time h6, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time h6, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time h6 {
+/* line 308, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time h6, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time h6, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time h6, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time h6 {
+  display: inline-block;
   font-size: 10px;
   margin: 0;
   padding: 2px 2px 2px 8px;
 }
-/* line 318, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .images-logo {
+/* line 318, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .images-logo {
   background: url("../images/client.png") no-repeat;
   background-size: cover;
 }
-/* line 324, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone {
+/* line 324, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone {
   margin-top: 30px;
 }
-/* line 326, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .images-logo {
+/* line 326, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .images-logo {
   background: url("../images/phone.png") no-repeat;
   background-size: cover;
 }
-/* line 334, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .images-logo {
+/* line 334, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .images-logo {
   width: 46px;
   height: 40px;
   margin: -35px 0 0 236px;
   background: url("../images/repair.png") no-repeat;
   background-size: cover;
 }
-/* line 341, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h2 {
+/* line 341, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h2 {
   display: inline-block;
   padding: 6px 2px 2px 8px;
   margin: 0;
 }
-/* line 347, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems {
+/* line 347, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems {
   border: 1px solid #dddddd;
   border-radius: 4px/9px;
   background: #fff;
 }
-/* line 352, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .seach, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .seach {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-/* line 360, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll {
+/* line 352, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll {
   padding: 2px 4px 2px 2px;
 }
-/* line 363, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll .scroll, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll .scroll {
+/* line 355, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll .scroll, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll .scroll {
   height: 100px;
   overflow-y: auto;
   padding: 0px 9px 0px 0px;
@@ -10092,24 +10126,28 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-cont
   box-sizing: border-box;
   color: #000;
 }
-/* line 376, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .provenance {
+/* line 365, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll .invisible, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll .invisible {
+  display: none;
+}
+/* line 370, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .provenance {
   width: 100%;
 }
-/* line 379, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .provenance h3 {
+/* line 372, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .provenance h3 {
   display: inline-block;
   padding: 6px 1px 2px 6px;
   margin: 0;
 }
-/* line 385, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .comments {
+/* line 378, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .comments {
   width: 100%;
   font-size: 11px;
-  padding: 7px 5px;
+  padding: 7px 5px 0 5px;
 }
-/* line 389, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .comments textarea {
+/* line 382, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .comments textarea {
   width: 100%;
   border: 1px solid #dddddd;
   border-radius: 4px;
@@ -10119,16 +10157,16 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-cont
   resize: none;
   outline: none;
 }
-/* line 402, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .images-logo {
+/* line 395, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .images-logo {
   width: 45px;
   height: 40px;
   margin: -35px 0 0 236px;
   background: url("../images/finish-logo.png") no-repeat;
   background-size: cover;
 }
-/* line 410, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-client, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-repair, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-mobile-phone {
+/* line 402, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-client, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-repair, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-mobile-phone {
   height: 150px;
   width: 494px;
   position: relative;
@@ -10138,8 +10176,8 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-cont
   background: #fff;
   box-sizing: border-box;
 }
-/* line 419, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-client .to-change, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-repair .to-change, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-mobile-phone .to-change {
+/* line 411, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-client .to-change, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-repair .to-change, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-mobile-phone .to-change {
   position: absolute;
   width: 22px;
   height: 22px;
@@ -10150,263 +10188,24 @@ main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-cont
   background: url("../images/pencil.png") no-repeat 2px 4px;
   background-size: 80%;
 }
-/* line 432, ../scss/widgets/_main.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h2 {
+/* line 423, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h2 {
   display: inline-block;
-  padding: 6px 2px 2px 8px;
+  padding: 6px 2px 2px 18px;
   margin: 0;
 }
 
-/* line 1, ../scss/widgets/_modal.scss */
+/* line 436, ../scss/widgets/_modal.scss */
 .select2-drop-active {
   border: 1px solid #cecece;
 }
-/* line 4, ../scss/widgets/_modal.scss */
+/* line 439, ../scss/widgets/_modal.scss */
 .select2-drop-active .select2-results {
   font-size: 11px;
   color: #3c3c3c;
 }
-/* line 8, ../scss/widgets/_modal.scss */
+/* line 443, ../scss/widgets/_modal.scss */
 .select2-drop-active .select2-results .select2-highlighted {
   background: #a1a1a1;
   color: #3c3c3c;
-}
-
-/* line 3, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog {
-  width: 570px;
-}
-/* line 6, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content {
-  height: 750px;
-}
-/* line 9, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header {
-  padding: 0px;
-}
-/* line 14, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line .style-close {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 15px;
-  right: 25px;
-}
-/* line 22, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line .style-modal-title {
-  padding-top: 25px;
-  padding-bottom: 15px;
-  text-align: center;
-}
-/* line 30, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient {
-  padding: 20px 110px 20px;
-  top: 0px;
-}
-/* line 35, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills {
-  display: inline-block;
-}
-/* line 39, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li {
-  margin-left: 0px;
-}
-/* line 42, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li a {
-  padding: 0 35px;
-}
-/* line 52, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body {
-  padding: 31px 27px 27px 27px;
-}
-/* line 57, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows {
-  position: absolute;
-  display: inline-block;
-  width: 500px;
-  text-align: center;
-  top: -48px;
-}
-/* line 65, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-r a, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-l a {
-  width: 32px;
-  height: 32px;
-  padding: 1px 0 0 0;
-}
-/* line 71, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-l {
-  left: 2px;
-}
-/* line 75, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-r {
-  left: 430px;
-}
-/* line 80, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish {
-  padding: 10px 0 17px 0;
-}
-/* line 83, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .images-logo, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .images-logo, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .images-logo, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .images-logo {
-  position: absolute;
-  width: 22px;
-  height: 40px;
-  margin: -35px 0 0 245px;
-}
-/* line 89, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell {
-  position: relative;
-  display: inline-block;
-  width: 254px;
-  vertical-align: top;
-}
-/* line 95, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell h2 {
-  display: inline-block;
-  padding: 6px 2px 2px 3px;
-  margin: 0;
-}
-/* line 101, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell h4, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell h4, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell h4, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell h4 {
-  display: inline-block;
-  margin: 0;
-}
-/* line 105, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event {
-  display: inline-block;
-  width: 185px;
-  padding: 7px 0 0 0;
-  vertical-align: top;
-}
-/* line 110, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event h2 {
-  padding-left: 0;
-}
-/* line 114, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event h3, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event h3, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event h3, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event h3 {
-  display: inline-block;
-  padding: 1px 2px 2px 0px;
-  margin: 0;
-}
-/* line 120, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell label, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell label, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell label, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell label {
-  display: inline-block;
-  padding-top: 15px;
-}
-/* line 125, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .style-btn-default, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .style-btn-default, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .style-btn-default, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .style-btn-default {
-  position: absolute;
-  top: 22px;
-  left: 11px;
-  height: 20px;
-  width: 20px;
-  padding: 0;
-}
-/* line 133, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container {
-  width: 100%;
-}
-/* line 136, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-choice, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-choice, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-choice, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-choice {
-  position: inherit;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-}
-/* line 144, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-choice .select2-chosen, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-choice .select2-chosen, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-choice .select2-chosen, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-choice .select2-chosen {
-  width: 100%;
-  padding: 7px 5px;
-}
-/* line 149, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-arrow, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-arrow, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-arrow, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-arrow {
-  width: 15px;
-  height: 12px;
-  right: 3px;
-  top: 3px;
-}
-/* line 157, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-l {
-  padding: 0 17px 0 5px;
-}
-/* line 161, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-r {
-  padding: 0 5px 0 17px;
-}
-/* line 165, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time {
-  width: 100%;
-}
-/* line 168, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time h2, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time h2 {
-  display: block;
-  padding: 6px 2px 2px 8px;
-}
-/* line 172, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time .cell-l, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time .cell-r, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time .cell-l {
-  display: inline-block;
-  width: 49.6%;
-}
-/* line 176, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time h6, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time h6, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time h6, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time h6 {
-  font-size: 10px;
-  margin: 0;
-  padding: 2px 2px 2px 8px;
-}
-/* line 185, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone {
-  margin-top: 30px;
-}
-/* line 191, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .images-logo {
-  width: 46px;
-  height: 40px;
-  margin: -35px 0 0 236px;
-}
-/* line 196, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h2 {
-  display: inline-block;
-  padding: 6px 2px 2px 8px;
-  margin: 0;
-}
-/* line 203, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll {
-  padding: 2px 4px 2px 2px;
-}
-/* line 206, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll .scroll, main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll .scroll {
-  height: 100px;
-  padding: 0px 9px 0px 0px;
-  margin: 0px;
-}
-/* line 214, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .provenance {
-  width: 100%;
-}
-/* line 217, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .provenance h3 {
-  display: inline-block;
-  padding: 6px 1px 2px 6px;
-  margin: 0;
-}
-/* line 223, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .comments {
-  width: 100%;
-  padding: 7px 5px;
-}
-/* line 226, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .comments textarea {
-  width: 100%;
-}
-/* line 232, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .images-logo {
-  width: 45px;
-  height: 40px;
-  margin: -35px 0 0 236px;
-}
-/* line 237, ../scss/layout/_html.scss */
-main .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h2 {
-  display: inline-block;
-  padding: 6px 2px 2px 8px;
-  margin: 0;
 }
