@@ -9620,154 +9620,6 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
     background-position: 100% -21px !important;
   }
 }
-/* line 1, ../scss/components/_input.scss */
-input[type="text"] {
-  width: 100%;
-  font-size: 11px;
-  padding: 7px 5px;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #000;
-  background: #fff;
-}
-
-/* line 12, ../scss/components/_input.scss */
-input[type="text"]:focus {
-  border: 1px solid #3a87ff;
-  border-radius: 4px;
-  outline: none;
-}
-
-/* line 18, ../scss/components/_input.scss */
-input[type="checkbox"] {
-  display: none;
-}
-
-/* line 22, ../scss/components/_input.scss */
-.event-checkbox input[type="checkbox"] + span {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  border: 1px solid #a0a0a0;
-  border-radius: 50%;
-  background: url("../images/flag.png") no-repeat 9px 6px #c7c7c7;
-  background-size: 50%;
-  cursor: pointer;
-}
-/* line 32, ../scss/components/_input.scss */
-.event-checkbox input[type="checkbox"]:checked + span {
-  background: url("../images/active-flag.png") no-repeat 9px 6px;
-  background-size: 50%;
-}
-
-/* line 40, ../scss/components/_input.scss */
-.provenance input[type="checkbox"] + span, .finish input[type="checkbox"] + span {
-  display: inline-block;
-  width: 21px;
-  height: 20px;
-  background: url("../images/checkbox.png") no-repeat 0px 4px;
-  background-size: 90%;
-  cursor: pointer;
-}
-/* line 49, ../scss/components/_input.scss */
-.provenance input[type="checkbox"] + span:hover, .finish input[type="checkbox"] + span:hover {
-  background: url("../images/focus-V.png") no-repeat 0px 4px;
-  background-size: 90%;
-}
-/* line 55, ../scss/components/_input.scss */
-.provenance input[type="checkbox"]:checked + span, .finish input[type="checkbox"]:checked + span {
-  background: url("../images/active-V.png") no-repeat 0px 4px;
-  background-size: 90%;
-}
-
-/* line 62, ../scss/components/_input.scss */
-input[type="submit"] {
-  width: 70px;
-  font-size: 18px;
-  padding: 0px 5px;
-  margin: 0px 0px 0px 70px;
-  border: 1px solid #dd5000;
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: #fff;
-  text-shadow: 0px 0.5px 2px rgba(255, 255, 255, 0.5);
-  background: linear-gradient(0deg, #d98851 50%, #ff6600);
-}
-
-/* line 76, ../scss/components/_input.scss */
-input[type="submit"]:active {
-  border: 1px solid #dd5000;
-  border-radius: 5px;
-  outline: none;
-  box-shadow: inset rgba(221, 80, 0, 0.4) -3px -3px 8px, inset rgba(221, 80, 0, 0.4) 3px 3px 8px;
-}
-
-/* line 84, ../scss/components/_input.scss */
-input[type="submit"]:focus {
-  outline: none;
-}
-
-/* line 88, ../scss/components/_input.scss */
-input[type="seach"] {
-  width: 100%;
-  font-size: 11px;
-  padding: 7px 5px;
-  border: 1px solid #dddddd;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #000;
-  background: #fff;
-}
-
-/* line 104, ../scss/components/_input.scss */
-input[type="seach"]:focus {
-  outline: none;
-}
-
-/* line 108, ../scss/components/_input.scss */
-input[type="datetime-local"] {
-  width: 127px;
-  font-size: 9px;
-  line-height: 14px;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #000;
-  background: #fff;
-}
-
-/* line 119, ../scss/components/_input.scss */
-input[type="datetime-local"]:focus {
-  outline: none;
-}
-
-/* line 2, ../scss/components/_scrollbar.scss */
-.scroll::-webkit-scrollbar {
-  width: 8px;
-  padding-right: 10px;
-}
-
-/* line 8, ../scss/components/_scrollbar.scss */
-.scroll::-webkit-scrollbar-track {
-  border: 1px solid #cecece;
-  border-radius: 4px;
-  background: linear-gradient(0deg, #cecece, #ffffff, #cecece);
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-/* line 15, ../scss/components/_scrollbar.scss */
-.scroll::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  min-height: 8px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-}
-
 /* line 2, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog {
   width: 570px;
@@ -10001,98 +9853,51 @@ input[type="datetime-local"]:focus {
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .style-btn-default:focus {
   outline: none;
 }
-/* line 241, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container {
-  width: 100%;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-}
-/* line 246, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-choice, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-choice, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-choice, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-choice {
-  position: inherit;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  border: none;
-}
-/* line 255, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-choice .select2-chosen, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-choice .select2-chosen, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-choice .select2-chosen, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-choice .select2-chosen {
-  height: 28px;
-  width: 100%;
-  font-size: 11px;
-  padding: 7px 5px;
-  box-sizing: border-box;
-  color: #000;
-  background: #fff;
-  line-height: 1.4;
-}
-/* line 266, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-choice .select2-chosen:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-choice .select2-chosen:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-choice .select2-chosen:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-choice .select2-chosen:focus {
-  border: 1px solid #3a87ff;
-  border-radius: 4px;
-  outline: none;
-}
-/* line 272, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-arrow, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-arrow, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-arrow, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-arrow {
-  width: 15px;
-  height: 12px;
-  right: 3px;
-  top: 3px;
-  border-radius: 2px;
-  border-left: none;
-  background: #cecece;
-}
-/* line 281, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .select2-container .select2-arrow b, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .select2-container .select2-arrow b, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .select2-container .select2-arrow b, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .select2-container .select2-arrow b {
-  background: url("../images/arrow-down.png") no-repeat 2px 3px;
-  background-size: cover;
-}
-/* line 288, ../scss/widgets/_modal.scss */
+/* line 242, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-l {
   padding: 1px 17px 1px 5px;
 }
-/* line 292, ../scss/widgets/_modal.scss */
+/* line 246, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-r {
   padding: 1px 5px 1px 17px;
 }
-/* line 296, ../scss/widgets/_modal.scss */
+/* line 250, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time {
   width: 100%;
   padding: 10px 0;
 }
-/* line 300, ../scss/widgets/_modal.scss */
+/* line 254, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time h2 {
   display: block;
   padding: 6px 2px 2px 8px;
 }
-/* line 304, ../scss/widgets/_modal.scss */
+/* line 258, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time .cell-l {
   display: inline-block;
   width: 49.6%;
 }
-/* line 308, ../scss/widgets/_modal.scss */
+/* line 262, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time h6, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time h6, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time h6, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time h6 {
   display: inline-block;
   font-size: 10px;
   margin: 0;
   padding: 2px 2px 2px 8px;
 }
-/* line 318, ../scss/widgets/_modal.scss */
+/* line 272, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .images-logo {
   background: url("../images/client.png") no-repeat;
   background-size: cover;
 }
-/* line 324, ../scss/widgets/_modal.scss */
+/* line 278, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone {
   margin-top: 30px;
 }
-/* line 326, ../scss/widgets/_modal.scss */
+/* line 280, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .images-logo {
   background: url("../images/phone.png") no-repeat;
   background-size: cover;
 }
-/* line 334, ../scss/widgets/_modal.scss */
+/* line 288, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .images-logo {
   width: 46px;
   height: 40px;
@@ -10100,23 +9905,40 @@ input[type="datetime-local"]:focus {
   background: url("../images/repair.png") no-repeat;
   background-size: cover;
 }
-/* line 341, ../scss/widgets/_modal.scss */
+/* line 295, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h2 {
   display: inline-block;
   padding: 6px 2px 2px 8px;
   margin: 0;
 }
-/* line 347, ../scss/widgets/_modal.scss */
+/* line 301, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems {
   border: 1px solid #dddddd;
   border-radius: 4px/9px;
   background: #fff;
 }
-/* line 352, ../scss/widgets/_modal.scss */
+/* line 306, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .search, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .search {
+  position: relative;
+  width: 100%;
+  font-size: 11px;
+  padding: 7px 5px;
+  border: 1px solid #dddddd;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 4px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  box-sizing: border-box;
+  color: #000;
+  background: #fff;
+}
+/* line 323, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll {
   padding: 2px 4px 2px 2px;
 }
-/* line 355, ../scss/widgets/_modal.scss */
+/* line 326, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll .scroll, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll .scroll {
   height: 100px;
   overflow-y: auto;
@@ -10126,27 +9948,27 @@ input[type="datetime-local"]:focus {
   box-sizing: border-box;
   color: #000;
 }
-/* line 365, ../scss/widgets/_modal.scss */
+/* line 336, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll .invisible, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll .invisible {
   display: none;
 }
-/* line 370, ../scss/widgets/_modal.scss */
+/* line 341, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .provenance {
   width: 100%;
 }
-/* line 372, ../scss/widgets/_modal.scss */
+/* line 343, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .provenance h3 {
   display: inline-block;
   padding: 6px 1px 2px 6px;
   margin: 0;
 }
-/* line 378, ../scss/widgets/_modal.scss */
+/* line 349, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .comments {
   width: 100%;
   font-size: 11px;
   padding: 7px 5px 0 5px;
 }
-/* line 382, ../scss/widgets/_modal.scss */
+/* line 353, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .comments textarea {
   width: 100%;
   border: 1px solid #dddddd;
@@ -10157,7 +9979,7 @@ input[type="datetime-local"]:focus {
   resize: none;
   outline: none;
 }
-/* line 395, ../scss/widgets/_modal.scss */
+/* line 366, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .images-logo {
   width: 45px;
   height: 40px;
@@ -10165,7 +9987,7 @@ input[type="datetime-local"]:focus {
   background: url("../images/finish-logo.png") no-repeat;
   background-size: cover;
 }
-/* line 402, ../scss/widgets/_modal.scss */
+/* line 373, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-client, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-repair, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-mobile-phone {
   height: 150px;
   width: 494px;
@@ -10176,7 +9998,7 @@ input[type="datetime-local"]:focus {
   background: #fff;
   box-sizing: border-box;
 }
-/* line 411, ../scss/widgets/_modal.scss */
+/* line 382, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-client .to-change, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-repair .to-change, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-mobile-phone .to-change {
   position: absolute;
   width: 22px;
@@ -10188,23 +10010,237 @@ input[type="datetime-local"]:focus {
   background: url("../images/pencil.png") no-repeat 2px 4px;
   background-size: 80%;
 }
-/* line 423, ../scss/widgets/_modal.scss */
+/* line 394, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h2 {
   display: inline-block;
   padding: 6px 2px 2px 18px;
   margin: 0;
 }
 
-/* line 436, ../scss/widgets/_modal.scss */
+/* line 1, ../scss/components/_input.scss */
+input[type="text"] {
+  width: 100%;
+  font-size: 11px;
+  padding: 7px 5px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #000;
+  background: #fff;
+}
+
+/* line 12, ../scss/components/_input.scss */
+input[type="text"]:focus {
+  border: 1px solid #3a87ff;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* line 18, ../scss/components/_input.scss */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* line 22, ../scss/components/_input.scss */
+.event-checkbox input[type="checkbox"] + span {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #a0a0a0;
+  border-radius: 50%;
+  background: url("../images/flag.png") no-repeat 9px 6px #c7c7c7;
+  background-size: 50%;
+  cursor: pointer;
+}
+/* line 32, ../scss/components/_input.scss */
+.event-checkbox input[type="checkbox"]:checked + span {
+  background: url("../images/active-flag.png") no-repeat 9px 6px;
+  background-size: 50%;
+}
+
+/* line 40, ../scss/components/_input.scss */
+.provenance input[type="checkbox"] + span, .finish input[type="checkbox"] + span {
+  display: inline-block;
+  width: 21px;
+  height: 20px;
+  background: url("../images/checkbox.png") no-repeat 0px 5px;
+  background-size: 90%;
+  cursor: pointer;
+}
+/* line 49, ../scss/components/_input.scss */
+.provenance input[type="checkbox"] + span:hover, .finish input[type="checkbox"] + span:hover {
+  background: url("../images/focus-V.png") no-repeat 0px 5px;
+  background-size: 90%;
+}
+/* line 55, ../scss/components/_input.scss */
+.provenance input[type="checkbox"]:checked + span, .finish input[type="checkbox"]:checked + span {
+  background: url("../images/active-V.png") no-repeat 0px 4px;
+  background-size: 90%;
+}
+
+/* line 62, ../scss/components/_input.scss */
+.finish input[type="submit"] {
+  width: 70px;
+  font-size: 18px;
+  padding: 0px 5px;
+  margin: 0px 0px 0px 70px;
+  border: 1px solid #dd5000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #fff;
+  text-shadow: 0px 0.5px 2px rgba(255, 255, 255, 0.5);
+  background: linear-gradient(0deg, #d98851 50%, #ff6600);
+}
+/* line 75, ../scss/components/_input.scss */
+.finish input[type="submit"]:active {
+  border: 1px solid #dd5000;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: inset rgba(221, 80, 0, 0.4) -3px -3px 8px, inset rgba(221, 80, 0, 0.4) 3px 3px 8px;
+}
+/* line 83, ../scss/components/_input.scss */
+.finish input[type="submit"]:focus {
+  outline: none;
+}
+
+/* line 88, ../scss/components/_input.scss */
+input[type="search"] {
+  width: 200px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+/* line 95, ../scss/components/_input.scss */
+input[type="search"]:focus {
+  outline: none;
+}
+
+/* line 99, ../scss/components/_input.scss */
+.search input[type="submit"] {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 15px;
+  height: 12px;
+  border-radius: 2px;
+  border: none;
+  padding: 0px 0px;
+  box-sizing: border-box;
+  background: #cecece url("../images/search.png") no-repeat 63% 1px;
+  background-size: 75%;
+}
+/* line 112, ../scss/components/_input.scss */
+.search input[type="submit"]:active {
+  outline: none;
+}
+/* line 116, ../scss/components/_input.scss */
+.search input[type="submit"]:focus {
+  outline: none;
+}
+
+/* line 121, ../scss/components/_input.scss */
+input[type="datetime-local"] {
+  width: 127px;
+  font-size: 9px;
+  line-height: 14px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #000;
+  background: #fff;
+}
+
+/* line 132, ../scss/components/_input.scss */
+input[type="datetime-local"]:focus {
+  outline: none;
+}
+
+/* line 2, ../scss/components/_scrollbar.scss */
+.scroll::-webkit-scrollbar {
+  width: 8px;
+  padding-right: 10px;
+}
+
+/* line 8, ../scss/components/_scrollbar.scss */
+.scroll::-webkit-scrollbar-track {
+  border: 1px solid #cecece;
+  border-radius: 4px;
+  background: linear-gradient(0deg, #cecece, #ffffff, #cecece);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* line 15, ../scss/components/_scrollbar.scss */
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  min-height: 8px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+/* line 1, ../scss/components/_select.scss */
+.select2-container {
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+/* line 5, ../scss/components/_select.scss */
+.select2-container .select2-choice {
+  position: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+}
+/* line 13, ../scss/components/_select.scss */
+.select2-container .select2-choice .select2-chosen {
+  height: 28px;
+  width: 100%;
+  font-size: 11px;
+  padding: 7px 5px;
+  box-sizing: border-box;
+  color: #000;
+  background: #fff;
+  line-height: 1.4;
+}
+/* line 24, ../scss/components/_select.scss */
+.select2-container .select2-choice .select2-chosen:focus {
+  border: 1px solid #3a87ff;
+  border-radius: 4px;
+  outline: none;
+}
+/* line 30, ../scss/components/_select.scss */
+.select2-container .select2-choice .select2-arrow {
+  width: 15px;
+  height: 12px;
+  right: 3px;
+  top: 3px;
+  border-radius: 2px;
+  border-left: none;
+  background: #cecece;
+}
+/* line 39, ../scss/components/_select.scss */
+.select2-container .select2-choice .select2-arrow b {
+  background: url("../images/arrow-down.png") no-repeat 2px 3px;
+  background-size: 80%;
+}
+
+/* line 50, ../scss/components/_select.scss */
+.select2-container-active .select2-choice .select2-arrow b {
+  background: url("../images/arrow-up.png") no-repeat 2px 3px;
+  background-size: 80%;
+}
+
+/* line 59, ../scss/components/_select.scss */
 .select2-drop-active {
   border: 1px solid #cecece;
 }
-/* line 439, ../scss/widgets/_modal.scss */
+/* line 62, ../scss/components/_select.scss */
 .select2-drop-active .select2-results {
   font-size: 11px;
   color: #3c3c3c;
 }
-/* line 443, ../scss/widgets/_modal.scss */
+/* line 66, ../scss/components/_select.scss */
 .select2-drop-active .select2-results .select2-highlighted {
   background: #a1a1a1;
   color: #3c3c3c;

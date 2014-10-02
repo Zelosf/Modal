@@ -9,13 +9,9 @@
     <script src="resource/lib/js/select2.js" type="text/javascript"></script> 
     <script>
         $(document).ready(function() { 
-        	$("#e1").select2();
-        	$("#e2").select2();
-        	$("#e3").select2();
-        	$("#e4").select2();
-        	$("#e5").select2();
-        	$("#e6").select2();
-        	$('.select2-search, .select2-focusser').remove();
+        	$(".select").select2({
+        		minimumResultsForSearch:-1
+        	});
         });
     </script>
 </head>
@@ -188,7 +184,10 @@
 											<div class="cell cell-l">
 												<h2>List of accessories</h2>
 												<div class="list-accessories">
-													<input type="seach"/>
+													<div class="search">
+														<input type="search"/>
+														<input type="submit" value=""/>
+													</div>
 													<div class="margin-scroll">
 														<ul class="scroll">
 															<li>1</li>
@@ -214,7 +213,10 @@
 											<div class="cell cell-r">
 												<h2>List of the probmles</h2>
 												<div class="list-problems">
-													<input type="seach"/>
+													<div class="search">
+														<input type="search"/>
+														<input type="submit" value=""/>
+													</div>
 													<div class="margin-scroll">
 														<ul class="problem1 scroll ">
 															<li>11</li>

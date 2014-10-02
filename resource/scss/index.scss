@@ -6,13 +6,14 @@
 @import "lib/bootstrap";
 @import "lib/select2";
 
-@import "components/input";
-@import "components/button";
-@import "components/scrollbar";
-
 @import "widgets/header";
 @import "widgets/main";
 @import "widgets/footer";
 @import "widgets/modal";
+
+@import "components/input";
+@import "components/button";
+@import "components/scrollbar";
+@import "components/select";
 
 @import "layout/html";

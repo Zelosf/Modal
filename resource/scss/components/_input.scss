@@ -41,13 +41,13 @@ input[type="checkbox"] {
 		display: inline-block;
 		width: 21px;
 		height: 20px;
-		background: url("../images/checkbox.png")no-repeat 0px 4px;
+		background: url("../images/checkbox.png")no-repeat 0px 5px;
 		background-size: 90%;
 		cursor: pointer;
 
 	}
 	input[type="checkbox"] + span:hover {
-		background: url("../images/focus-V.png")no-repeat 0px 4px;
+		background: url("../images/focus-V.png")no-repeat 0px 5px;
 		background-size: 90%;
 
 	}
@@ -58,51 +58,64 @@ input[type="checkbox"] {
 
 	}
 }
+.finish{
+	input[type="submit"]{	
+		width: 70px;
+		font-size: 18px;
+		padding: 0px 5px;
+		margin:  0px 0px 0px 70px;
+		border: 1px solid rgb(221,80,0);
+		border-radius: 5px;
+		box-sizing: border-box;
+		color: 	#fff;
+	    text-shadow: 0px 0.5px 2px rgba(255,255,255,0.5);
+		background: linear-gradient(0deg,rgba(217,136,81,1) 50%, rgba(255,102,0,1));
+	}
 
-input[type="submit"]{	
-	width: 70px;
-	font-size: 18px;
-	padding: 0px 5px;
-	margin:  0px 0px 0px 70px;
-	border: 1px solid rgb(221,80,0);
-	border-radius: 5px;
-	box-sizing: border-box;
-	color: 	#fff;
-    text-shadow: 0px 0.5px 2px rgba(255,255,255,0.5);
-	background: linear-gradient(0deg,rgba(217,136,81,1) 50%, rgba(255,102,0,1));
-    //background-clip: text;
+	input[type="submit"]:active{
+		border: 1px solid rgb(221,80,0);
+		border-radius: 5px;
+		outline: none;
+		//background: linear-gradient(0deg,rgba(217,136,81,1) 50%, rgba(255,102,0,1)) radial-gradient(circle at 0 0, rgba(0,0,0,.65), rgba(0,0,0,.35));
+		box-shadow:	inset rgba(221,80,0,.4) -3px -3px 8px,	inset rgba(221,80,0,.4) 3px 3px 8px;
+	}
+
+	input[type="submit"]:focus{
+		outline: none;
+	}
 }
 
-input[type="submit"]:active{
-	border: 1px solid rgb(221,80,0);
-	border-radius: 5px;
+input[type="search"]{
+	width: 200px;
+	border: none;
 	outline: none;
-	//background: linear-gradient(0deg,rgba(217,136,81,1) 50%, rgba(255,102,0,1)) radial-gradient(circle at 0 0, rgba(0,0,0,.65), rgba(0,0,0,.35));
-	box-shadow:	inset rgba(221,80,0,.4) -3px -3px 8px,	inset rgba(221,80,0,.4) 3px 3px 8px;
+	-webkit-appearance: none;
 }
 
-input[type="submit"]:focus{
+input[type="search"]:focus{
 	outline: none;
 }
+.search{
+	input[type="submit"]{
+		position: absolute;
+		top: 3px;
+		right: 3px;
+		width: 15px;
+		height: 12px;
+		border-radius: 2px;
+		border: none;
+		padding: 0px 0px;
+		box-sizing: border-box;
+		background: rgb(206,206,206) url("../images/search.png")no-repeat 63% 1px;
+		background-size: 75%;
+	}
+	input[type="submit"]:active{
+		outline: none;
+	}
 
-input[type="seach"]{
-	width: 100%;
-	font-size: 11px;
-	padding: 7px 5px;
-	border: 1px solid rgb(221,221,221);	
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border-radius: 4px;
-	box-sizing: border-box;
-	color: #000;
-	background: #fff;
-}
-
-input[type="seach"]:focus{
-	outline: none;
+	input[type="submit"]:focus{
+		outline: none;
+	}
 }
 
 input[type="datetime-local"]{
