@@ -9623,12 +9623,18 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 /* line 2, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog {
   width: 570px;
+  -webkit-box-shadow: 0 0 0 10px rgba(150, 150, 150, 0.5);
+  -moz-box-shadow: 0 0 0 10px rgba(150, 150, 150, 0.5);
   box-shadow: 0 0 0 10px rgba(150, 150, 150, 0.5);
 }
 /* line 6, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content {
   height: 750px;
   border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
   border-radius: 0;
 }
 /* line 11, ../scss/widgets/_modal.scss */
@@ -9642,200 +9648,276 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 /* line 17, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line .style-close {
   position: absolute;
-  width: 15px;
-  height: 15px;
   top: 15px;
   right: 25px;
+  width: 15px;
+  height: 15px;
   font-size: 15px;
   color: white;
-  background: url("../images/Close.png") no-repeat, #969696;
-  background-size: cover;
-  opacity: 1;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
+  background: url("../images/Close.png") no-repeat, #969696;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
 }
-/* line 31, ../scss/widgets/_modal.scss */
+/* line 30, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line .style-close:focus {
+  outline: none;
+}
+/* line 34, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .blue-line .style-modal-title {
   padding-top: 25px;
   padding-bottom: 15px;
-  text-align: center;
-  line-height: 1;
   font-size: 24px;
+  line-height: 1;
+  text-align: center;
   color: #606060;
 }
-/* line 41, ../scss/widgets/_modal.scss */
+/* line 44, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient {
-  padding: 20px 110px 20px;
-  background: linear-gradient(0deg, #dcdcdc 5%, #eff0f2, #eff0f2, #eff0f2, #eff0f2, #eff0f2, #eff0f2);
-  text-align: center;
   top: 0px;
+  padding: 20px 110px 20px;
+  text-align: center;
+  background: -webkit-linear-gradient(0deg, #dcdcdc 5%, #eff0f2, #eff0f2, #eff0f2, #eff0f2, #eff0f2, #eff0f2);
+  background: -moz-linear-gradient(0deg, #dcdcdc 5%, #eff0f2, #eff0f2, #eff0f2, #eff0f2, #eff0f2, #eff0f2);
+  background: -o-linear-gradient(0deg, #dcdcdc 5%, #eff0f2, #eff0f2, #eff0f2, #eff0f2, #eff0f2, #eff0f2);
+  background: linear-gradient(0deg, #dcdcdc 5%, #eff0f2, #eff0f2, #eff0f2, #eff0f2, #eff0f2, #eff0f2);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 48, ../scss/widgets/_modal.scss */
+/* line 51, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills {
   display: inline-block;
   border: 1px solid #bfbfbf;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 55, ../scss/widgets/_modal.scss */
+/* line 58, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li {
-  font-size: 15px;
-  line-height: 25px;
   margin-left: 0px;
+  line-height: 25px;
+  font-size: 15px;
 }
-/* line 60, ../scss/widgets/_modal.scss */
+/* line 63, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li a {
   padding: 0 35px;
   color: #cdcdcd;
 }
-/* line 66, ../scss/widgets/_modal.scss */
+/* line 69, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.active {
   text-decoration: underline;
 }
-/* line 69, ../scss/widgets/_modal.scss */
+/* line 72, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.active a {
-  color: white;
   background-color: #3a87ff;
+  color: white;
+  -webkit-border-radius: 3px 0px 0px 3px;
+  -moz-border-radius: 3px 0px 0px 3px;
+  -ms-border-radius: 3px 0px 0px 3px;
+  -o-border-radius: 3px 0px 0px 3px;
   border-radius: 3px 0px 0px 3px;
 }
-/* line 76, ../scss/widgets/_modal.scss */
+/* line 79, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.second.active a {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
   border-radius: 0px;
 }
-/* line 80, ../scss/widgets/_modal.scss */
+/* line 83, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.second.active.first a {
   background-color: #3a87ff;
 }
-/* line 86, ../scss/widgets/_modal.scss */
+/* line 89, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.third.active a {
+  -webkit-border-radius: 0px 3px 3px 0px;
+  -moz-border-radius: 0px 3px 3px 0px;
+  -ms-border-radius: 0px 3px 3px 0px;
+  -o-border-radius: 0px 3px 3px 0px;
   border-radius: 0px 3px 3px 0px;
 }
-/* line 90, ../scss/widgets/_modal.scss */
+/* line 93, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li.third.active.first a {
   background-color: #3a87ff;
 }
-/* line 98, ../scss/widgets/_modal.scss */
+/* line 101, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li:nth-child(2).active:first-child(1) a {
   background-color: #3a87ff;
 }
-/* line 106, ../scss/widgets/_modal.scss */
+/* line 109, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li:last-child.active:first-child, .modal .style-modal-dialog .style-modal-content .style-modal-header .background-gradient .style-nav-pills li:last-child.active:nth-child(2) {
   background-color: #3a87ff;
 }
-/* line 116, ../scss/widgets/_modal.scss */
+/* line 119, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body {
   padding: 31px 27px 27px 27px;
 }
-/* line 121, ../scss/widgets/_modal.scss */
+/* line 124, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows {
   position: absolute;
+  top: -56px;
   display: inline-block;
-  width: 500px;
   text-align: center;
-  top: -48px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 129, ../scss/widgets/_modal.scss */
+/* line 131, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-r a, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-l a {
   width: 32px;
   height: 32px;
   padding: 1px 0 0 0;
   border: 1px solid #acacac;
-  border-radius: 50%;
-  background: #c7c7c7;
   font-size: 17px;
   line-height: 27px;
   color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
-/* line 141, ../scss/widgets/_modal.scss */
+/* line 142, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-l {
   left: 2px;
 }
-/* line 145, ../scss/widgets/_modal.scss */
+/* line 144, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-l a {
+  background: url("../images/return.png") no-repeat 10px, #c7c7c7;
+  -webkit-background-size: 30%;
+  -moz-background-size: 30%;
+  -o-background-size: 30%;
+  background-size: 30%;
+}
+/* line 149, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-r {
   left: 430px;
 }
-/* line 150, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .disabled a {
+/* line 151, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-r a {
+  background: url("../images/next.png") no-repeat 13px, #c7c7c7;
+  -webkit-background-size: 30%;
+  -moz-background-size: 30%;
+  -o-background-size: 30%;
+  background-size: 30%;
+}
+/* line 157, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-r.disabled a {
   border: 1px solid #d2d2d2;
-  background: gainsboro;
+  background: url("../images/next.png") no-repeat 13px, gainsboro;
+  -webkit-background-size: 30%;
+  -moz-background-size: 30%;
+  -o-background-size: 30%;
+  background-size: 30%;
 }
-/* line 156, ../scss/widgets/_modal.scss */
+/* line 164, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .style-arrows .arrow-l.disabled a {
+  border: 1px solid #d2d2d2;
+  background: url("../images/return.png") no-repeat 10px, gainsboro;
+  -webkit-background-size: 30%;
+  -moz-background-size: 30%;
+  -o-background-size: 30%;
+  background-size: 30%;
+}
+/* line 171, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish {
-  box-sizing: border-box;
-  border: 1px dotted #a0a0a0;
   padding: 10px 0 17px 0;
+  border: 1px dotted #a0a0a0;
   background: #eff0f2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 162, ../scss/widgets/_modal.scss */
+/* line 177, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h2 {
   font-size: 16px;
 }
-/* line 166, ../scss/widgets/_modal.scss */
+/* line 181, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h3 {
   font-size: 15px;
 }
-/* line 170, ../scss/widgets/_modal.scss */
+/* line 185, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h4 {
   font-size: 9px;
 }
-/* line 174, ../scss/widgets/_modal.scss */
+/* line 189, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .images-logo, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .images-logo, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .images-logo, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .images-logo {
   position: absolute;
   width: 22px;
   height: 40px;
   margin: -35px 0 0 245px;
 }
-/* line 181, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell {
+/* line 196, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side {
   position: relative;
   display: inline-block;
-  width: 254px;
+  width: 49.5%;
   vertical-align: top;
 }
-/* line 187, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell h2 {
+/* line 202, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side .cell {
+  position: relative;
   display: inline-block;
+  width: 100%;
+}
+/* line 207, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side .cell h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side .cell h2 {
+  display: inline-block;
+  margin: 0;
   padding: 6px 2px 2px 3px;
-  margin: 0;
 }
-/* line 193, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell h4 {
+/* line 213, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side .cell h4, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side .cell h4 {
   display: inline-block;
   margin: 0;
 }
-/* line 197, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event {
+/* line 217, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side .cell .event, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side .cell .event {
   display: inline-block;
   width: 185px;
   padding: 7px 0 0 0;
   vertical-align: top;
 }
-/* line 202, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event h2 {
+/* line 222, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side .cell .event h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side .cell .event h2 {
   padding-left: 0;
 }
-/* line 206, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event h3 {
+/* line 226, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side .cell .event h3, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side .cell .event h3 {
   display: inline-block;
   padding: 1px 2px 2px 0px;
   margin: 0;
 }
-/* line 212, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .event-checkbox {
+/* line 232, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side .cell .event-checkbox, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side .cell .event-checkbox {
   display: inline-block;
 }
-/* line 215, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell label {
+/* line 235, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side .cell label, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side .cell label {
   display: inline-block;
   padding-top: 15px;
 }
-/* line 220, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .error {
+/* line 240, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side .cell .error, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side .cell .error {
   border: 1px solid #ff0101;
 }
-/* line 224, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .style-btn-default {
+/* line 244, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side .cell .style-btn-default, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side .cell .style-btn-default {
   position: absolute;
   top: 22px;
   left: 11px;
@@ -9843,197 +9925,321 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
   width: 20px;
   padding: 0;
   border-color: #5d97fd;
-  box-sizing: border-box;
-  border-radius: 50%;
   font-size: 15px;
   line-height: 1;
   color: #5d97fd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
 }
-/* line 238, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell .style-btn-default:focus {
+/* line 258, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side .cell .style-btn-default:focus, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side .cell .style-btn-default:focus {
   outline: none;
 }
-/* line 242, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-l {
+/* line 264, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .left-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .left-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .left-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .left-side .cell {
   padding: 1px 17px 1px 5px;
 }
-/* line 246, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-r {
+/* line 270, ../scss/widgets/_modal.scss */
+.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .right-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .right-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .right-side .cell, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .right-side .cell {
   padding: 1px 5px 1px 17px;
 }
-/* line 250, ../scss/widgets/_modal.scss */
+/* line 275, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time {
   width: 100%;
-  padding: 10px 0;
+  padding: 3px 0 10px 0;
 }
-/* line 254, ../scss/widgets/_modal.scss */
+/* line 279, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time h2, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time h2 {
   display: block;
   padding: 6px 2px 2px 8px;
 }
-/* line 258, ../scss/widgets/_modal.scss */
-.modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time .cell-l, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time .cell-r, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time .cell-l {
-  display: inline-block;
-  width: 49.6%;
-}
-/* line 262, ../scss/widgets/_modal.scss */
+/* line 284, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .cell-date-time h6, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .cell-date-time h6, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .cell-date-time h6, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .cell-date-time h6 {
   display: inline-block;
   font-size: 10px;
   margin: 0;
   padding: 2px 2px 2px 8px;
 }
-/* line 272, ../scss/widgets/_modal.scss */
+/* line 295, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .client .images-logo {
   background: url("../images/client.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
-/* line 278, ../scss/widgets/_modal.scss */
+/* line 301, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone {
   margin-top: 30px;
 }
-/* line 280, ../scss/widgets/_modal.scss */
+/* line 303, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .mobile-phone .images-logo {
   background: url("../images/phone.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
-/* line 288, ../scss/widgets/_modal.scss */
+/* line 311, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .images-logo {
   width: 46px;
   height: 40px;
   margin: -35px 0 0 236px;
   background: url("../images/repair.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
-/* line 295, ../scss/widgets/_modal.scss */
+/* line 318, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair h2 {
   display: inline-block;
-  padding: 6px 2px 2px 8px;
   margin: 0;
+  padding: 6px 2px 2px 8px;
 }
-/* line 301, ../scss/widgets/_modal.scss */
+/* line 324, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems {
   border: 1px solid #dddddd;
-  border-radius: 4px/9px;
-  background: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background: white;
 }
-/* line 306, ../scss/widgets/_modal.scss */
+/* line 329, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .search, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .search {
   position: relative;
   width: 100%;
-  font-size: 11px;
   padding: 7px 5px;
   border: 1px solid #dddddd;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-radius: 4px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  box-sizing: border-box;
+  font-size: 11px;
   color: #000;
-  background: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 323, ../scss/widgets/_modal.scss */
+/* line 346, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll {
   padding: 2px 4px 2px 2px;
 }
-/* line 326, ../scss/widgets/_modal.scss */
+/* line 349, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll .scroll, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll .scroll {
   height: 100px;
   overflow-y: auto;
-  padding: 0px 9px 0px 0px;
   margin: 0px;
-  border-radius: 4px;
-  box-sizing: border-box;
+  padding: 0px 9px 0px 0px;
   color: #000;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 336, ../scss/widgets/_modal.scss */
+/* line 358, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-accessories .margin-scroll .invisible, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .list-problems .margin-scroll .invisible {
   display: none;
 }
-/* line 341, ../scss/widgets/_modal.scss */
+/* line 363, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .provenance {
   width: 100%;
 }
-/* line 343, ../scss/widgets/_modal.scss */
+/* line 365, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .provenance h3 {
   display: inline-block;
-  padding: 6px 1px 2px 6px;
   margin: 0;
+  padding: 6px 1px 2px 6px;
 }
-/* line 349, ../scss/widgets/_modal.scss */
+/* line 371, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .comments {
   width: 100%;
-  font-size: 11px;
   padding: 7px 5px 0 5px;
+  font-size: 11px;
 }
-/* line 353, ../scss/widgets/_modal.scss */
+/* line 375, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .repair .comments textarea {
   width: 100%;
   border: 1px solid #dddddd;
-  border-radius: 4px;
-  box-sizing: border-box;
   color: #000;
-  background: #fff;
   resize: none;
   outline: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 366, ../scss/widgets/_modal.scss */
+/* line 388, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .images-logo {
   width: 45px;
   height: 40px;
   margin: -35px 0 0 236px;
   background: url("../images/finish-logo.png") no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
-/* line 373, ../scss/widgets/_modal.scss */
+/* line 395, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-client, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-repair, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-mobile-phone {
-  height: 150px;
-  width: 494px;
   position: relative;
+  width: 494px;
+  height: 150px;
   margin: 8px 10px 14px 10px;
   padding: 10px 0 17px 0;
   border: 1px dotted #a0a0a0;
-  background: #fff;
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 382, ../scss/widgets/_modal.scss */
+/* line 404, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-client .to-change, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-repair .to-change, .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish .finish-mobile-phone .to-change {
   position: absolute;
-  width: 22px;
-  height: 22px;
   top: 4px;
   right: 5px;
+  width: 22px;
+  height: 22px;
   border: 1px solid #79adfc;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   background: url("../images/pencil.png") no-repeat 2px 4px;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
   background-size: 80%;
 }
-/* line 394, ../scss/widgets/_modal.scss */
+/* line 416, ../scss/widgets/_modal.scss */
 .modal .style-modal-dialog .style-modal-content .style-modal-body .tab-content .active .finish h2 {
   display: inline-block;
   padding: 6px 2px 2px 18px;
   margin: 0;
 }
 
+/* line 1, ../scss/widgets/_calender.scss */
+.calender {
+  display: inline-block;
+  width: 127px;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+}
+/* line 7, ../scss/widgets/_calender.scss */
+.calender .sub-calender {
+  margin: 0;
+}
+/* line 10, ../scss/widgets/_calender.scss */
+.calender .sub-calender .sub2-calender {
+  width: 100%;
+  padding: 0;
+}
+/* line 13, ../scss/widgets/_calender.scss */
+.calender .sub-calender .sub2-calender .sub3-calender {
+  width: 100%;
+  margin: 0;
+}
+/* line 17, ../scss/widgets/_calender.scss */
+.calender .sub-calender .sub2-calender .sub3-calender .sub4-calender .datetime {
+  width: 97px;
+  height: 14px;
+  margin: 3px 0 0 0;
+  padding: 1px 5px;
+  border: 1px solid #dddddd;
+  font-size: 9px;
+  color: #000;
+  background: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 29, ../scss/widgets/_calender.scss */
+.calender .sub-calender .sub2-calender .sub3-calender .sub4-calender .calendar-mini {
+  padding: 1px 0 0 0;
+  border: 0;
+}
+/* line 32, ../scss/widgets/_calender.scss */
+.calender .sub-calender .sub2-calender .sub3-calender .sub4-calender .calendar-mini .sub-calendar-mini {
+  width: 16px;
+  height: 16px;
+}
+
+/* line 42, ../scss/widgets/_calender.scss */
+.glyphicon-calendar {
+  background: url("../images/small-calendar.png") no-repeat;
+  -webkit-background-size: 99%;
+  -moz-background-size: 99%;
+  -o-background-size: 99%;
+  background-size: 99%;
+}
+
+/* line 46, ../scss/widgets/_calender.scss */
+.glyphicon-calendar::before {
+  content: none;
+}
+
 /* line 1, ../scss/components/_input.scss */
 input[type="text"] {
   width: 100%;
-  font-size: 11px;
   padding: 7px 5px;
   border: 1px solid #dddddd;
-  border-radius: 4px;
-  box-sizing: border-box;
+  font-size: 11px;
   color: #000;
-  background: #fff;
+  background: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* line 12, ../scss/components/_input.scss */
 input[type="text"]:focus {
   border: 1px solid #3a87ff;
-  border-radius: 4px;
   outline: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 
 /* line 18, ../scss/components/_input.scss */
@@ -10047,14 +10253,24 @@ input[type="checkbox"] {
   width: 32px;
   height: 32px;
   border: 1px solid #a0a0a0;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   border-radius: 50%;
   background: url("../images/flag.png") no-repeat 9px 6px #c7c7c7;
+  -webkit-background-size: 50%;
+  -moz-background-size: 50%;
+  -o-background-size: 50%;
   background-size: 50%;
-  cursor: pointer;
 }
 /* line 32, ../scss/components/_input.scss */
 .event-checkbox input[type="checkbox"]:checked + span {
   background: url("../images/active-flag.png") no-repeat 9px 6px;
+  -webkit-background-size: 50%;
+  -moz-background-size: 50%;
+  -o-background-size: 50%;
   background-size: 50%;
 }
 
@@ -10063,40 +10279,64 @@ input[type="checkbox"] {
   display: inline-block;
   width: 21px;
   height: 20px;
-  background: url("../images/checkbox.png") no-repeat 0px 5px;
-  background-size: 90%;
   cursor: pointer;
+  background: url("../images/checkbox.png") no-repeat 0px 5px;
+  -webkit-background-size: 90%;
+  -moz-background-size: 90%;
+  -o-background-size: 90%;
+  background-size: 90%;
 }
 /* line 49, ../scss/components/_input.scss */
 .provenance input[type="checkbox"] + span:hover, .finish input[type="checkbox"] + span:hover {
   background: url("../images/focus-V.png") no-repeat 0px 5px;
+  -webkit-background-size: 90%;
+  -moz-background-size: 90%;
+  -o-background-size: 90%;
   background-size: 90%;
 }
 /* line 55, ../scss/components/_input.scss */
 .provenance input[type="checkbox"]:checked + span, .finish input[type="checkbox"]:checked + span {
-  background: url("../images/active-V.png") no-repeat 0px 4px;
+  background: url("../images/active-V.png") no-repeat 0px 5px;
+  -webkit-background-size: 90%;
+  -moz-background-size: 90%;
+  -o-background-size: 90%;
   background-size: 90%;
 }
 
 /* line 62, ../scss/components/_input.scss */
 .finish input[type="submit"] {
   width: 70px;
-  font-size: 18px;
   padding: 0px 5px;
   margin: 0px 0px 0px 70px;
   border: 1px solid #dd5000;
-  border-radius: 5px;
-  box-sizing: border-box;
+  font-size: 18px;
   color: #fff;
-  text-shadow: 0px 0.5px 2px rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(0deg, #d98851 50%, #ff6600);
+  background: -moz-linear-gradient(0deg, #d98851 50%, #ff6600);
+  background: -o-linear-gradient(0deg, #d98851 50%, #ff6600);
   background: linear-gradient(0deg, #d98851 50%, #ff6600);
+  text-shadow: 0px 0.5px 2px rgba(255, 255, 255, 0.5);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* line 75, ../scss/components/_input.scss */
 .finish input[type="submit"]:active {
   border: 1px solid #dd5000;
-  border-radius: 5px;
   outline: none;
+  -webkit-box-shadow: inset rgba(221, 80, 0, 0.4) -3px -3px 8px, inset rgba(221, 80, 0, 0.4) 3px 3px 8px;
+  -moz-box-shadow: inset rgba(221, 80, 0, 0.4) -3px -3px 8px, inset rgba(221, 80, 0, 0.4) 3px 3px 8px;
   box-shadow: inset rgba(221, 80, 0, 0.4) -3px -3px 8px, inset rgba(221, 80, 0, 0.4) 3px 3px 8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
 }
 /* line 83, ../scss/components/_input.scss */
 .finish input[type="submit"]:focus {
@@ -10123,12 +10363,21 @@ input[type="search"]:focus {
   right: 3px;
   width: 15px;
   height: 12px;
-  border-radius: 2px;
-  border: none;
   padding: 0px 0px;
-  box-sizing: border-box;
+  border: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
   background: #cecece url("../images/search.png") no-repeat 63% 1px;
+  -webkit-background-size: 75%;
+  -moz-background-size: 75%;
+  -o-background-size: 75%;
   background-size: 75%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* line 112, ../scss/components/_input.scss */
 .search input[type="submit"]:active {
@@ -10136,23 +10385,6 @@ input[type="search"]:focus {
 }
 /* line 116, ../scss/components/_input.scss */
 .search input[type="submit"]:focus {
-  outline: none;
-}
-
-/* line 121, ../scss/components/_input.scss */
-input[type="datetime-local"] {
-  width: 127px;
-  font-size: 9px;
-  line-height: 14px;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-  color: #000;
-  background: #fff;
-}
-
-/* line 132, ../scss/components/_input.scss */
-input[type="datetime-local"]:focus {
   outline: none;
 }
 
@@ -10181,6 +10413,10 @@ input[type="datetime-local"]:focus {
 .select2-container {
   width: 100%;
   border: 1px solid #dddddd;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   border-radius: 4px;
 }
 /* line 5, ../scss/components/_select.scss */
@@ -10194,40 +10430,56 @@ input[type="datetime-local"]:focus {
 }
 /* line 13, ../scss/components/_select.scss */
 .select2-container .select2-choice .select2-chosen {
-  height: 28px;
   width: 100%;
-  font-size: 11px;
+  height: 28px;
   padding: 7px 5px;
-  box-sizing: border-box;
-  color: #000;
-  background: #fff;
+  font-size: 11px;
   line-height: 1.4;
+  color: #000;
+  background: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* line 24, ../scss/components/_select.scss */
 .select2-container .select2-choice .select2-chosen:focus {
   border: 1px solid #3a87ff;
-  border-radius: 4px;
   outline: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 /* line 30, ../scss/components/_select.scss */
 .select2-container .select2-choice .select2-arrow {
-  width: 15px;
-  height: 12px;
   right: 3px;
   top: 3px;
-  border-radius: 2px;
+  width: 15px;
+  height: 12px;
   border-left: none;
   background: #cecece;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
 }
 /* line 39, ../scss/components/_select.scss */
 .select2-container .select2-choice .select2-arrow b {
   background: url("../images/arrow-down.png") no-repeat 2px 3px;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
   background-size: 80%;
 }
 
 /* line 50, ../scss/components/_select.scss */
 .select2-container-active .select2-choice .select2-arrow b {
   background: url("../images/arrow-up.png") no-repeat 2px 3px;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
   background-size: 80%;
 }
 
@@ -10242,6 +10494,6 @@ input[type="datetime-local"]:focus {
 }
 /* line 66, ../scss/components/_select.scss */
 .select2-drop-active .select2-results .select2-highlighted {
-  background: #a1a1a1;
   color: #3c3c3c;
+  background: #a1a1a1;
 }

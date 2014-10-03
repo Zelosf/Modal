@@ -1,7 +1,7 @@
 .select2-container {
 width: 100%;
 border: 1px solid rgb(221,221,221);
-border-radius: 4px;
+@include border-radius (4px);
 	.select2-choice {
 		position: inherit;
 		display: block;
@@ -10,35 +10,35 @@ border-radius: 4px;
 		padding: 0;
 		border: none;
 								
-		.select2-chosen {	
-			height: 28px;
+		.select2-chosen {
 			width: 100%;
-			font-size: 11px;
+			height: 28px;
 			padding: 7px 5px;
-			box-sizing: border-box;
-			color: #000;
-			background: #fff;
+			font-size: 11px;
 			line-height: 1.4;
+			color: #000;
+			@include background (#fff);
+			@include box-sizing (border-box);
 		}
 
 		.select2-chosen:focus {
 			border: 1px solid rgb(58,135,255);
-			border-radius: 4px;
 			outline: none;
+			@include border-radius (4px);
 		}
 
 		.select2-arrow {
-			width: 15px;
-			height: 12px;
 			right: 3px;
 			top: 3px;
-			border-radius: 2px;
+			width: 15px;
+			height: 12px;
 			border-left: none;
-			background: rgb(206,206,206);
+			@include background (rgb(206,206,206));
+			@include border-radius (2px);
 				
 			b {
-				background: url("../images/arrow-down.png") no-repeat 2px 3px;
-				background-size: 80%;
+				@include background (url("../images/arrow-down.png") no-repeat 2px 3px);
+				@include background-size (80%);
 			}
 			
 		}
@@ -48,8 +48,8 @@ border-radius: 4px;
 	.select2-choice {
 		.select2-arrow {				
 			b{
-				background: url("../images/arrow-up.png") no-repeat 2px 3px;
-				background-size: 80%;
+				@include background (url("../images/arrow-up.png") no-repeat 2px 3px);
+				@include background-size (80%);
 			}			
 		}
 	}
@@ -64,8 +64,8 @@ border-radius: 4px;
 		color:  rgb(60,60,60);
 
 		.select2-highlighted{
-			background: rgb(161,161,161);
 			color:  rgb(60,60,60);
+			@include background (rgb(161,161,161));
 		}
 	}
 }

@@ -5,14 +5,22 @@
 	<title>modal</title>
 	<link rel="stylesheet" href="resource/css/index.css"/>	
     <script src="resource/lib/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="resource/lib/js/moment.js" type="text/javascript"></script> 
     <script src="resource/lib/js/bootstrap.min.js" type="text/javascript"></script>   
     <script src="resource/lib/js/select2.js" type="text/javascript"></script> 
+    <script src="resource/lib/js/bootstrap-datatimepiker.js" type="text/javascript"></script> 
     <script>
         $(document).ready(function() { 
         	$(".select").select2({
         		minimumResultsForSearch:-1
         	});
         });
+		$(function(){
+			$(".sub4-calender").datetimepicker({
+		    	language: "ru"
+		    });
+		    $(".sub4-calender").data("DateTimePicker").getDate();
+		});
     </script>
 </head>
 <body>	
@@ -24,7 +32,6 @@
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog style-modal-dialog">
 			    <div class="modal-content style-modal-content">
-
 				    <div class="modal-header style-modal-header">
 				    	<div class="blue-line">
 					        <button type="button" class="close style-close" data-dismiss="modal" aria-hidden="true"></button>
@@ -46,142 +53,137 @@
 
 				    <div class="modal-body style-modal-body">
 						<div class="tab-content">
-							<div class="tab-pane active" id="Data">
-								<!--<ul class="pagination">
-									<li class="disabled"><a href="#" data-toggle="tab">&laquo;</a></li>
-									<li class="active"><a href="#Data" data-toggle="tab">Data <span class="sr-only">(current)</span></a></li>
-									<li><a href="#Repair" data-toggle="tab">Repair <span class="sr-only">(current)</span></a></li>
-									<li><a href="#Finish" data-toggle="tab">Finish <span class="sr-only">(current)</span></a></li>
-									<li><a href="#Repair" data-toggle="tab">&raquo;</a></li>
-								</ul>
-								
+							<div class="tab-pane active" id="Data">								
 								<ul class="nav nav-pills style-arrows">
-									<li class="disabled arrow-l"><a href="#" data-toggle="pill">&#60;</a></li>							
-									<li class="arrow-r"><a href="#Repair" data-toggle="pill">&#62;</a></li>						
-								</ul>-->
+									<li class="disabled arrow-l"><a href="#" data-toggle="pill"></a></li>							
+									<li class="arrow-r"><a href="#Repair" data-toggle="pill"></a></li>						
+								</ul>
 								<form action="#" name="data">
 									<div class="client">
 
 										<div class="images-logo">
-											<!--<img src="resource/images/client.png">-->
 										</div>
 
-										<div class="cell cell-l">
-											<h2>Full name</h2>
-											<input name="client[Full name]" type="text"/>
+										<div class="left-side">
+											<div class="cell">
+												<h2>Full name</h2>
+												<input name="client[Full name]" type="text"/>
+											</div>
+											<div class="cell">
+												<h2>Email</h2>
+												<input name="client[Email]" type="text"/>
+											</div>
+											<div class="cell ">
+												<h2>Postcode</h2>
+												<input name="client[Postcode]" type="text"/>
+											</div>
+											<div class="cell">
+												<h2>Address line 1</h2>
+												<input name="client[Address line 1]" type="text"/>
+											</div>
 										</div>
+										<div class="right-side">
+											<div class="cell">
+												<h2>Company</h2>
+												<input class="error" name="client[Company]" type="text"/>
+												<button type="button" class="btn btn-default style-btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Error.">
+		 										?
+		 										</button>
+											</div>										
 
-										<div class="cell cell-r">
-											<h2>Company</h2>
-											<input class="error" name="client[Company]" type="text"/>
-											<button type="button" class="btn btn-default style-btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Error.">
-	 										?
-	 										</button>
-										</div>
+											<div class="cell">
+												<h2>State</h2>
+												<select id="e1" class="select">
+													<option value="AL">Alabama</option>
+												
+													<option value="WY">Wyoming</option>
+												</select>
+											</div>											
 
-										<div class="cell cell-l">
-											<h2>Email</h2>
-											<input name="client[Email]" type="text"/>
-										</div>
+											<div class="cell">
+												<h2>Suburb</h2>
+												<select id="e2" class="select">
+													<option value="AL"> </option>
+												
+													<option value="WY">Wyoming</option>
+												</select>
+											</div>											
 
-										<div class="cell cell-r">
-											<h2>State</h2>
-											<select id="e1" class="select">
-												<option value="AL">Alabama</option>
-											
-												<option value="WY">Wyoming</option>
-											</select>
-										</div>
-
-										<div class="cell cell-l">
-											<h2>Postcode</h2>
-											<input name="client[Postcode]" type="text"/>
-										</div>
-
-										<div class="cell cell-r">
-											<h2>Suburb</h2>
-											<select id="e2" class="select">
-												<option value="AL"> </option>
-											
-												<option value="WY">Wyoming</option>
-											</select>
-										</div>
-
-										<div class="cell cell-l">
-											<h2>Address line 1</h2>
-											<input name="client[Address line 1]" type="text"/>
-										</div>
-
-										<div class="cell cell-r">
-											<h2>Address line 2</h2>
-											<input name="client[Address line 2]" type="text"/>
-										</div>								
+											<div class="cell">
+												<h2>Address line 2</h2>
+												<input name="client[Address line 2]" type="text"/>
+											</div>	
+										</div>																	
 									</div>
 									<div class="mobile-phone">
 
 										<div class="images-logo">
-											<!--<img src="resource/images/phone.png">-->
 										</div>
 
-										<div class="cell cell-l">
-											<h2>Mobile phone</h2>
-											<input name="mobile-phone[Mobile phone]" type="text"/>
-										</div>
+										<div class="left-side">
+											<div class="cell">
+												<h2>Mobile phone</h2>
+												<input name="mobile-phone[Mobile phone]" type="text"/>
+											</div>										
 
-										<div class="cell cell-r">
-											<h2>Landline phone</h2>
-											<input name="mobile-phone[Landline phone]" type="text"/>
-										</div>
+											<div class="cell">
+												<h2>Brand of the phone</h2>
+												<input name="mobile-phone[Brand of the phone]" type="text"/>
+											</div>										
 
-										<div class="cell cell-l">
-											<h2>Brand of the phone</h2>
-											<input name="mobile-phone[Brand of the phone]" type="text"/>
-										</div>
+											<div class="cell">
+												<h2>Carrier</h2>
+												<input name="mobile-phone[Carrier]" type="text"/>
+											</div>										
 
-										<div class="cell cell-r">
-											<h2>Phone model</h2>
-											<input name="mobile-phone[Phone model]" type="text"/>
-										</div>
-
-										<div class="cell cell-l">
-											<h2>Carrier</h2>
-											<input name="mobile-phone[Carrier]" type="text"/>
-										</div>
-
-										<div class="cell cell-r">
-											<h2>Passcode</h2><h4>(PIN or other code to unlock phone)</h4>
-											<input name="mobile-phone[Passcode]" type="text"/>
-										</div>
-
-										<div class="cell cell-l">
-											<h2>IMEI number</h2>
-											<h4>(or serial number for tablets)</h4>
-											<input name="mobile-phone[IMEI number]" type="text"/>
-										</div>
-
-										<div class="cell cell-r">
-											<div class="event">
-												<h2>Want a free phone</h2>
-												<h3>while his is being repaired</h3>
+											<div class="cell">
+												<h2>IMEI number</h2>
+												<h4>(or serial number for tablets)</h4>
+												<input name="mobile-phone[IMEI number]" type="text"/>
 											</div>
-											<div class="event-checkbox">
-												<label><input type="checkbox" value="1" name="event"><span></span></label>
+											
+										</div>
+										<div class="right-side">
+											<div class="cell">
+												<h2>Landline phone</h2>
+												<input name="mobile-phone[Landline phone]" type="text"/>
 											</div>
-											<!--<div class="event-img">
-												<a href="#"></a>
-												<!-<img src="resource/images/flag.png">
-											</div>-->
+
+											<div class="cell">
+												<h2>Phone model</h2>
+												<input name="mobile-phone[Phone model]" type="text"/>
+											</div>
+
+											<div class="cell">
+												<h2>Passcode</h2><h4>(PIN or other code to unlock phone)</h4>
+												<input name="mobile-phone[Passcode]" type="text"/>
+											</div>
+
+											<div class="cell">
+												<div class="event">
+													<h2>Want a free phone</h2>
+													<h3>while his is being repaired</h3>
+												</div>
+												<div class="event-checkbox">
+													<label><input type="checkbox" value="1" name="event"><span></span></label>
+												</div>
+											</div>
+
 										</div>
 									</div>
 								</form>
 							</div>
 							<div class="tab-pane" id="Repair">
+								<ul class="nav nav-pills style-arrows">
+									<li class="arrow-l"><a href="#Data" data-toggle="pill"></a></li>							
+									<li class="arrow-r"><a href="#Finish" data-toggle="pill"></a></li>						
+								</ul>
 								<form action="#" name="repair">
-										<div class="repair">
-											<div class="images-logo">
-											</div>
-
-											<div class="cell cell-l">
+									<div class="repair">
+										<div class="images-logo">
+										</div>
+										<div class="left-side">
+											<div class="cell">
 												<h2>List of accessories</h2>
 												<div class="list-accessories">
 													<div class="search">
@@ -208,9 +210,11 @@
 														</ul>
 													</div>
 												</div>
-											</div>
+											</div>										
+										</div>
 
-											<div class="cell cell-r">
+										<div class="right-side">
+											<div class="cell">
 												<h2>List of the probmles</h2>
 												<div class="list-problems">
 													<div class="search">
@@ -253,101 +257,131 @@
 															<li>25</li>
 														</ul>
 														<ul class="problem3 scroll invisible">
-															<li>21</li>
-															<li>22</li>
-															<li>23</li>
-															<li>24</li>
-															<li>25</li>
-															<li>21</li>
-															<li>22</li>
-															<li>23</li>
-															<li>24</li>
-															<li>25</li>
-															<li>21</li>
-															<li>22</li>
-															<li>23</li>
-															<li>24</li>
-															<li>25</li>
+															<li>31</li>
+															<li>32</li>
+															<li>33</li>
+															<li>34</li>
+															<li>35</li>
+															<li>31</li>
+															<li>32</li>
+															<li>33</li>
+															<li>34</li>
+															<li>35</li>
 														</ul>
 													</div>
 												</div>
 											</div>
-
-											<div class="cell cell-date-time">
-												<h2>How you want to give phone:</h2>
-												<div class="cell-l">
-													<select id="e3" class="select">
-														<option value="AL">Alabama</option>
-													
-														<option value="WY">Wyoming</option>
-													</select>
-												</div>
-												<div class="cell-r">
-													<select id="e4" class="select" disabled>
-														<option value="AL"> </option>
-														<option value="Al">Alabama</option>													
-														<option value="WY">Wyoming</option>
-													</select>
-												</div>
-												<h6>Select time and date</h6>
-												<input type="datetime-local"/>
-												
-											</div>
-
-											<div class="cell cell-date-time">
-												<h2>How you want to get the phone back:</h2>
-												<div class="cell-l">
-													<select id="e5" class="select">
-														<option value="AL">Alabama</option>
-													
-														<option value="WY">Wyoming</option>
-													</select>
-												</div>
-												<div class="cell-r ">
-													<select id="e6" class="select" disabled>
-														<option value="Al"> </option>
-														<option value="Al">Alabama</option>
-														<option value="Al">Alabama</option>
-														<option value="Al">Alabama</option>
-														<option value="Al">Alabama</option>
-														<option value="Al">Alabama</option>
-														<option value="Al">Alabama</option>
-														<option value="Al">Alabama</option>
-														<option value="Al">Alabama</option>
-														<option value="Al">Alabama</option>
-														<option value="Al">Alabama</option>
-														<option value="Al">Alabama</option>
-														<option value="Al">Alabama</option>
-														<option value="WY">Wyoming</option>
-													</select>
-												</div>
-												<h6>Select time and date</h6>
-												<input type="datetime-local"/>
-												
-											</div>
-											<h2>How did you hear about </h2>
-											<a href="#"><img src="resource/images/fix-my-mobile.png" width="120"></a><h2>?</h2>
-											<div class="provenance">
-												<h3>Google</h3>
-												<label><input type="checkbox" name="Google"><span></span></label>
-												<h3>Radio advertisement</h3>
-												<label><input type="checkbox" name="Radio advertisement"><span></span></label>
-												<h3>Friends</h3>
-												<label><input type="checkbox" name="Friends"><span></span></label>
-												<h3>TV</h3>
-												<label><input type="checkbox" name="TV<"><span></span></label>
-												<h3>Press</h3>
-												<label><input type="checkbox" name="Press"><span></span></label>
-											</div>
-											<h2>Additional comments</h2>
-											<div class="comments">
-												<textarea name="comments" rows="5"> </textarea>
-											</div>
-
 										</div>
+										<div class="cell-date-time">
+												<h2>How you want to give phone:</h2>
+												<div class="left-side">
+													<div class="cell">
+														<select id="e3" class="select">
+															<option value="AL">Alabama</option>
+															
+															<option value="WY">Wyoming</option>
+														</select>
+													</div>
+												</div>
+												<div class="right-side">
+													<div class="cell">
+														<select id="e4" class="select" disabled>
+															<option value="AL"> </option>
+															<option value="Al">Alabama</option>													
+															<option value="WY">Wyoming</option>
+														</select>
+													</div>
+												</div>
+												<h6>Select time and date</h6>
+												<div class="container calender">
+													<div class="row sub-calender">
+														<div class='col-sm-6 sub2-calender'>
+															<div class="form-group sub3-calender">
+																<div class='input-group date sub4-calender' id='datetimepicker'>
+																	<input type='text' class="form-control datetime"/>
+																	<span class="input-group-addon calendar-mini"><span class="glyphicon glyphicon-calendar sub-calendar-mini"></span>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--<input type="datetime-local"/>-->
+													
+											</div>
+											<div class="cell-date-time">
+												<h2>How you want to get the phone back:</h2>
+												<div class="left-side">
+													<div class="cell">
+														<select id="e5" class="select">
+															<option value="AL">Alabama</option>
+														
+															<option value="WY">Wyoming</option>
+														</select>
+													</div>
+												</div>
+												<div class="right-side">
+													<div class="cell">
+														<select id="e6" class="select" disabled>
+															<option value="Al"> </option>
+															<option value="Al">Alabama</option>
+															<option value="Al">Alabama</option>
+															<option value="Al">Alabama</option>
+															<option value="Al">Alabama</option>
+															<option value="Al">Alabama</option>
+															<option value="Al">Alabama</option>
+															<option value="Al">Alabama</option>
+															<option value="Al">Alabama</option>
+															<option value="Al">Alabama</option>
+															<option value="Al">Alabama</option>
+															<option value="Al">Alabama</option>
+															<option value="Al">Alabama</option>
+															<option value="WY">Wyoming</option>
+														</select>
+													</div>
+												</div>
+												<h6>Select time and date</h6>
+												<div class="container calender">
+													<div class="row sub-calender">
+														<div class='col-sm-6 sub2-calender'>
+															<div class="form-group sub3-calender">
+																<div class='input-group date sub4-calender' id='datetimepicker'>
+																	<input type='text' class="form-control datetime" />
+																	<span class="input-group-addon calendar-mini"><span class="glyphicon glyphicon-calendar sub-calendar-mini"></span>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--<input type="datetime-local"/>-->
+											</div>									
+										<h2>How did you hear about </h2>
+										<a href="#"><img src="resource/images/fix-my-mobile.png" width="120"></a><h2>?</h2>
+										<div class="provenance">
+											<h3>Google</h3>
+											<label><input type="checkbox" name="Google"><span></span></label>
+											<h3>Radio advertisement</h3>
+											<label><input type="checkbox" name="Radio advertisement"><span></span></label>
+											<h3>Friends</h3>
+											<label><input type="checkbox" name="Friends"><span></span></label>
+											<h3>TV</h3>
+											<label><input type="checkbox" name="TV<"><span></span></label>
+											<h3>Press</h3>
+											<label><input type="checkbox" name="Press"><span></span></label>
+										</div>
+										<h2>Additional comments</h2>
+										<div class="comments">
+											<textarea name="comments" rows="5"> </textarea>
+										</div>
+									</div>
 								</form>
 							</div>
 							<div class="tab-pane" id="Finish">
+								<ul class="nav nav-pills style-arrows">
+									<li class="arrow-l"><a href="#Repair" data-toggle="pill"></a></li>							
+									<li class="disabled arrow-r"><a href="#" data-toggle="pill"></a></li>						
+								</ul>
 								<form action="#" name="finish">
 									<div class="finish">
 
@@ -356,14 +390,89 @@
 
 										<div class="finish-client">
 											<a class="to-change" href="#Data" data-toggle="pill"></a>
+											<div class="left-side">
+												<div class="cell">
+													<h2>Full name</h2>
+												</div>
+												<div class="cell">
+													<h2>Email</h2>
+												</div>
+												<div class="cell ">
+													<h2>Postcode</h2>
+												</div>
+												<div class="cell">
+													<h2>Address line 1</h2>
+												</div>
+											</div>
+											<div class="right-side">
+												<div class="cell">
+													<h2>Company</h2>
+												</div>										
+
+												<div class="cell">
+													<h2>State</h2>
+												</div>											
+
+												<div class="cell">
+													<h2>Suburb</h2>
+												</div>											
+
+												<div class="cell">
+													<h2>Address line 2</h2>
+												</div>	
+											</div>
 										</div>
 
 										<div class="finish-mobile-phone">
 											<a class="to-change" href="#Data" data-toggle="pill"></a>
+											<div class="left-side">
+												<div class="cell">
+													<h2>Mobile phone</h2>
+												</div>										
+
+												<div class="cell">
+													<h2>Brand of the phone</h2>
+												</div>										
+
+												<div class="cell">
+													<h2>Carrier</h2>
+												</div>										
+
+												<div class="cell">
+													<h2>IMEI number</h2>
+												</div>
+												
+											</div>
+											<div class="right-side">
+												<div class="cell">
+													<h2>Landline phone</h2>
+												</div>
+
+												<div class="cell">
+													<h2>Phone model</h2>
+												</div>
+
+												<div class="cell">
+													<h2>Passcode</h2>
+												</div>
+
+												<div class="cell">
+													<h2>Yes</h2>
+												</div>
+
+											</div>
 										</div>
 
 										<div class="finish-repair">
 											<a class="to-change" href="#Repair" data-toggle="pill"></a>
+											<div class="left-side">
+												<div class="cell">
+													<h2>List of accessories</h2>
+												</div>
+												<div class="cell">
+													<h2>List of the probmles</h2>
+												</div>
+											</div>
 										</div>
 
 										<h2>I read and understood terms and conditions</h2>
